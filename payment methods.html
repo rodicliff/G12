@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.bing.com/search?q=cloudflare&cvid=e7c611f3f8bd41d38f244adb4702413b&aqs=edge.0.69i64i450l8.1708413981j0j1&FORM=ANSPA1&PC=ASTS">
+        <title></title>
+
+
+    </head>
+    <body>
+
+        <style>
+
+                .container{
+                    padding: 30px;
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    gap: 90px;
+                }
+
+                .card{
+                    box-shadow: 2px 2px 8px blue;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+                }
+
+                .card-body{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .card-header img{
+                    width: 200px;
+                }
+
+                .card-body h1{
+                    font-size: 10px;
+                    color: orange;
+                    margin-top: 20px;
+                }
+
+                .card-body .rate{
+                    width: 80px;
+                    margin: 5px 0;
+                } 
+
+                .card-body .price{
+                    font-size: 20px;
+                    color: orange;
+                    margin-top: 1px;
+                }
+
+                .card-body button{
+                    border: 0;
+                    padding: 20px 0;
+                    border-radius: 5px;
+                    background: orange;
+                    color: white;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+
+                @media screen and (max-width: 900px) {}
+                    .container{
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+
+            .header{
+                position: fixed;
+                width: 100%;
+                height: 100px;
+                font-weight: bold;
+                text-align: center;
+                background: white;
+                background-size: cover;
+                transition: 0.3s;   
+            }
+
+            .offset{
+                margin-top: 0;
+                padding-top: 100px;
+                text-align: center;
+                transition: 2s;
+                font-size: 15px;
+                
+                
+            }
+
+
+           
+
+
+
+            /* The side navigation menu */
+            .sidenav {
+                height: 100%; /* 100% Full-height */
+                width: 0; /* 0 width - change this with JavaScript */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Stay on top */
+                top: 0;
+                left: 0;
+                background-color: #111; /* Black*/
+                overflow-x: hidden; /* Disable horizontal scroll */
+                padding-top: 60px; /* Place content 60px from the top */
+                transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            }
+
+            /* The navigation menu links */
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s
+            }
+
+            /* When you mouse over the navigation links, change their color */
+            .sidenav a:hover, .offcanvas a:focus{
+                color: #f1f1f1;
+            }
+
+            /* Position and style the close button (top right corner) */
+            .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px !important;
+                margin-left: 50px;
+            }
+
+            /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+            #main {
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+
+            /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+                @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+
+            span{
+                color: black;
+                font-size: 60px;
+                font-weight: bold;
+            }
+
+            h2{
+                color: green;
+                font-size: 40px;
+                font-weight: bold;
+                float: left;
+            }
+
+            h3{
+                color: green;
+                font-size: 40px;
+                font-weight: bold;
+                float: left;
+                margin-top: 150px;
+                
+            }
+
+            p{
+                color: black;
+                font-weight: bold;
+                font-size: 15px;  
+            }
+
+            p{
+                color: black;
+            }
+
+            .map iframe{
+                float: right;
+                margin-bottom: 30px;
+                width: 420px;
+            } 
+
+            .footer{
+                background: #111;
+                font-size: 20px;
+                font-style: oblique;
+                color: white;
+            }
+        </style>
+
+        <div class="header">
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+                    <li><a href="index.html">HOME PAGE</a></li>
+                    <a href="about.HTML">ABOUT...</a>
+                    <a href="menu.html">MENU...</a>
+                    <a href="contact.HTML">CONTACT...</a>
+                    <a href="review.html">REVIEW...</a>
+                    <a href="cigar.HTML">CIGAR...</a>
+                    <a href="liquor.html">LIQUOR...</a>
+
+                </ul>
+                
+                
+              </div>
+              
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()"><img src="images/cart.png" style=" width: 100px; height: 100px;" > 
+            </span>
+              
+              <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+              <div id="main">
+            </div>
+
+
+
+        </div>
+
+        <div class="offset">
+
+            <h1>OUR ONLINE PAYMENT METHODS</h1>
+            <h2>we use the following online payment methods listed bellow</h2>
+            <p>CASHAPP</p>
+            <P>ZELLE</P>
+            <P>VENMO</P>
+            <P>PAYPAL</P>
+            <P>BETCOIN</P>
+            
+
+            <h1>CASH APP</h1>
+
+            <img src="images/cash app.png"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <h1>Getting Started with Cash App</h1>
+
+            <p>Cash App is the easiest way to send, spend, save, and invest your money.</p>
+            <p>Here’s how it works:</p>
+            <p>1; Download the app for iPhone or Android</p>
+            <p>2; Create a Cash App account</p>
+            <p>3; Connect Cash App to your bank account</p>
+            <p>4; Add cash to your Cash App</p>
+
+            <h1>When you have money in Cash App, you can:</h1>
+            <p>Send money to friends</p>
+            <p>Receive money from friends</p>
+            <p>Pay for stuff</p>
+            <p>Buy/sell stocks</p>
+            <p>Buy/sell Bitcoin</p>
+            
+            <h1>Let’s get started.</h1>
+            <h1>Download</h1>
+            <p>Cash App is available on the Apple App Store and Google Play. Download it directly to your mobile device.</p>
+ 
+            <h1>Create an Account</h1>
+            <p>Tap on Cash App to launch it</p>
+            <p>To create an account, enter your phone number or an email address</p>
+            <p>Cash App will send you a secret code via text or email—enter it</p>
+            <p>You can invite friends to sign up with Cash App to earn cash (optional)</p>
+            <p>Enter your debit card info to link your bank account to Cash App</p>
+            <p>Pick a $Cashtag—a unique username you’ll use to send and receive money</p>
+            <p>Enter your zip code</p>
+            <p>Start using Cash App!</p>
+
+            <img src="images/cash 1.png"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <h1>Adding Cash</h1>
+            <p>Before you can pay for stuff with Cash App, you need to add some cash to your account.</p>
+            <p>Launch Cash App</p>
+            <p>Tap the bank icon in the lower left corner to open the Banking tab</p>
+            <p>Tap the Add Cash button</p>
+            <p>Enter the amount of cash you want to add to Cash App</p>
+            <p>Tap the green Add button</p>
+
+            <h1>Sending and Receiving $</h1>
+
+            <p>You can quickly send and receive money with Cash App.</p>
+
+            <p>Tap the $ for the Cash App main screen</p>
+            <p>Enter the amount of cash you want to send or receive</p>
+            <p>Tap Request or Pay to search for a $Cashtag, Phone number, or email address</p>
+            <p>Add a note (if you want)</p>
+            <p>Tap Request or Pay to complete the transaction</p>
+
+            <h1>Cashing Out</h1>
+
+            <p>Withdraw cash from your account at any time.</p>
+            <p>Tap your Cash App balance in the lower left to open the Banking tab</p>
+            <p>Tap the Cash Out button</p>
+            <p>Tap to enter the amount of cash you want to withdraw</p>
+            <p>Tap the Cash Out button</p>
+
+            <h1>How to use Zelle: A beginner’s guide to digital payments</h1>
+
+
+            <img src="images/How-to-use-zelle.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <h1>What is Zelle?</h1>
+
+            <p>Zelle is a P2P payment service, which allows users to send money to each other digitally. Over 1,000 banks and credit unions are partnered with Zelle, and for those that are, the service is automatically included with the institution’s app.</p>
+            <p>Zelle works by linking to a U.S. checking or savings account and transferring money to another U.S. bank account. The payer and payee do not need to have accounts at the same financial institution, but they do both need to be enrolled with Zelle. Users send money through their bank’s app or the Zelle app, and that money is automatically deposited into the recipient’s bank account that they have linked to their Zelle account.</p>
+            <p>Payment transfers with Zelle generally happen within minutes and don’t incur any fees. Note that Zelle does not work with business debit cards, credit cards, international accounts and gift cards.</p>
+            <p>Some banks may allow businesses to set up a Zelle business account, which can be used for merchant transactions. However, the bank may charge a small fee for businesses using Zelle, and consumers must be enrolled in the service to make payments.</p>
+            <p>Otherwise, there are no fees for downloading and using Zelle.</p>
+
+            <h1>ZELLE</h1>
+
+            <img src="images/zelle.png"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <h1>How to use Zelle</h1>
+
+            <p>Zelle is primarily app-based, so you’ll need a smartphone to get started. If it’s offered through your bank, then Zelle may be available to use through the bank’s online portal, but it typically can’t be accessed on a web browser.</p>
+            <p>Follow these steps for sending money through Zelle.</p>
+
+            <h1>1. Check whether your bank or credit union offers Zelle</h1>
+            <p>There are a couple ways to find out if your financial institution offers Zelle. If you’ve downloaded the bank or credit union’s mobile app, there should be a designated Zelle tab in the app for those that come with the payment service. Zelle may also be under the “Transfers” section of the banking app.</p>
+            <p>Another way to find out if your financial institution offers Zelle is by searching for it in Zelle’s online database of those it partners with. You can also contact the financial institution directly to ask if it offers Zelle.</p>
+
+            <h1>How do I get Zelle?</h1>
+
+            <p>Although Zelle is available as a standalone app, users may not be able to use the standalone app if Zelle is offered through their financial institution.</p>
+            <p>If the financial institution does not automatically come with Zelle in its own app, then you can use the Zelle standalone app by downloading it from the Apple or Google Play store.</p>
+
+            <h1>2. Enroll your email or phone number</h1>
+
+            <p>When you first use Zelle, through a banking app or the standalone Zelle app, it’ll require you to enroll either an email address or phone number (or both). That way, other users can verify who they’re sending money to.</p>
+            <p>If you previously enrolled in Zelle at a different bank or credit union, your email or phone number will need to be removed from that account before it can be used to re-enroll with a new institution.</p>
+            <p>Users of the standalone app, who don’t have access to Zelle through their financial institution, will also need to enter their debit card information for the card they’d like to make payments from. It must be a U.S.-issued debit card and not a business card.</p>
+
+            <h1>3. Choose whom to send money to and how much</h1>
+            <p>Once you’ve been enrolled, you’ll have the option to send or request money from another Zelle user. After selecting send or request, add the contact information of the recipient to create a new contact for them, including first name, last name and email or phone number.</p>
+            <p>It’s necessary to get the recipient’s email or phone number, because each Zelle user must enroll with either one of these to verify their identity. This helps to ensure your money is sent to the right person.</p>
+            <p>Make sure to double check the recipient’s information, because if you send money to the wrong person, you likely cannot cancel the payment. The only instance in which payments can be canceled is if the recipient has not enrolled yet, so the payment was not transferred from your account.</p>
+            <p>When you’ve verified and selected a contact, enter the dollar amount of the payment or request.</p>
+
+            <h1>4. Send the money</h1>
+            <p>The app will ask you to review the transaction details before the money or request is sent. Double check the transaction amount, the recipient’s contact info and the account that your money will be withdrawn from.</p>
+            <p>There is also an optional memo or “Reason” text box, where users can type in a reason for the payment before sending it.</p>
+            <p>If all the information is correct, hit send. Money sent through Zelle is typically available in the recipient’s account within minutes, though if the recipient hasn’t enrolled in Zelle yet, it may take a couple of days. The recipient will need to enroll first to receive the payment.</p>
+
+            <h1>Which banks use Zelle?</h1>
+
+            <p>The banks that own Zelle aren’t the only ones that use it, however. There are over 1,000 banks and credit unions partnered with Zelle to provide the payment service to their customers. If your bank is one of them, then Zelle will already be included with the bank’s app.</p>
+
+
+            <h1>How to use Apple Pay with your iPhone</h1>
+
+            <img src="images/use 1.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>With stores encouraging shoppers to use contactless payment, knowing how to use Apple Pay is more than just convenient — it's becoming essential. With Apple Pay, you can buy things just by placing a compatible device near a point-of-sale terminal without having to hand over cash or a credit card. 
+
+            </p>Apple introduced Apple Pay in 2014, with support for the iPhone first. Apple Pay has since made its way to other devices, including the Apple Watch, Mac and iPad. Want to how to use Apple Pay with an iPhone? That's what we'll focus on here.
+
+            <p>Apple Pay works with most debit and credit cards from leading banks, allowing you to store your credit or debit card info on your iPhone. You can use Apple Pay at millions of brick-and-mortar stores — basically any store showing an Apple Pay or contactless payment logo accepts Apple Pay. With the introduction of Apple Pay Later, these purchases can even be split into four payments over six weeks.
+
+            </p>
+
+            <h1>Apple Pay</h1>
+
+            <img src="images/apple pay.png"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <h1>How to use Apple Pay: Set up</h1>
+
+            <p>You’ll be prompted to enter credit card info for Apple Pay when you fire up your iPhone. But in your excitement to start using your new phone, it's possible that you breezed past this step. No matter — it’s easy to go back and enable Apple Pay or add extra payment cards that you might have skipped over the first time.</p>
+            <p>1. Open the Wallet app on your iPhone.</p>
+
+            <img src="images/use 2.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <h1>2. Tap the plus button in the upper-right corner of the screen.</h1>
+
+            <img src="images/use 3.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>3. You’ll be prompted to either enter a credit or debit card or apply for an Apple Card. For this step-by-step, we’ll enter a credit or debit card. (This screen is also where you can add transit card information, if you live in a place that supports that feature.)</p>
+
+            <img src="images/use 4.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>4. You’ll be taken to a screen to add cards. If you’ve got cards on file from a previous iPhone backup, you’ll be able to add those by entering their CVC. You can also add a different or a new card entirely if this is your first time using Apple Pay.</p>
+
+            <img src="images/use 5.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>5. The Wallet app will prompt you to add a credit card in the frame of a view finder so that it can scan in your credit card number. You can also enter your credit card number, expiration data and CRV manually. Apple will confirm all this info with your card issuer and if everything’s OK, the card will be added to your wallet.</p>
+
+            <img src="images/use 6.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 300px;">
+
+            <p>You’ll receive a notification when your credit or debit card is ready to use via Apple Pay.</p>
+
+            <img src="images/use 7.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 300px;">
+
+            <h1>How to use Apple Pay</h1>
+            <p>You can use Apple Pay in a variety of ways, including in apps, on web pages, and to ride trains and subways. But the most common way to use Apple Pay is in stores at a point of purchase in lieu of swiping or dipping a credit or handling over cash. How to use Apple Pay in a store to make contactless payments varies depending on what iPhone you use.
+
+            With iPhone X or later</p>
+
+            <p>1. Double-click the Sleep/Wake button on the right  side of your iPhone.</p>
+
+            <img src="images/use 8.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 300px;">
+
+            <p2>. Select the card you want to use by tapping it, and double-click the Sleep/Wake button when prompted to pay.</p>
+
+            <img src="images/use 9.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 300px;">
+
+            <p>. Glance at your iPhone if you’ve set up Face ID to verify your identity, or enter your PIN or password.</p>
+            <p>Hold your iPhone near the payment terminal. Your payment is complete when you see Done and a checkmark on the screen.</p>
+
+            <img src="images/use 10.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 300px;">
+
+            <p>With an iPhone 8 or earlier</p>
+            <p>1. Place your finger on the Touch ID button on your phone.</p>
+            <p>2. Place the top of your iPhone near the contactless card reader. Your payment is complete when you see Done and a checkmark on the screen.</p>
+
+
+            <h1>How to Use Venmo</h1>
+            <p>Send and receive money with the touch of a button</p>
+            <h1>Venmo Signup and Login</h1>
+            <p>First thing, you need to download the app for either iOS or Android (Windows devices don't support Venmo). In the app, you choose a way to create an account through Facebook or using an email address. You need to validate a cell phone number by entering the code they text to you, then you're ready to set up an account.</p>
+            <p>important: Your account includes a photo, which is critical since it enables people to quickly verify that you're the one they want to pay.</p>
+            <p>You also choose a unique user name that allows other users to search for you to request or send money. The app asks if you want to link to Facebook (if you didn't already register through the social media platform) and then it asks if you want to sync your phone contacts to locate Venmo users you already know.</p>
+
+            <h1>Adjusting Venmo Security Settings</h1>
+            <p>After you create your profile Venmo walks you through security options. The default setting on the app is Public, meaning that anyone using the app can see your activities. You can change that by going to Profile > Settings > Privacy if you'd rather not have your split tab broadcasted into cyberspace and commented on by other users. The payment amount itself won't be shown, but the To/From information and any comments are publicly visible unless you update your settings.</p>
+            <p>Your other security options are Friends, where only people you and the sender know on the app see your transactions, or Private, which shows only the payer/payee. If you and a friend have different privacy settings then Venmo defaults to the setting that's more restricted between the two people involved in the transaction.</p>
+
+            <img src="images/ven 1.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 300px;">
+
+            <p>important: For additional security you can use Settings to require Touch ID or a pass code to open Venmo</p>
+            <h1>Adding a Payment Option to Venmo</h1>
+            <p>To use Venmo you need to add a payment option by linking to a bank account or adding a credit or debit card. Paying with your Venmo balance through your bank account or using a debit card is free; using a credit card incurs a 3% fee.</p>
+            <p>If you opt to link your bank account you can either verify instantly by providing your bank login and password to the secure Venmo system. If you'd rather not enter your bank login then you can wait a few days for Venmo to do micro-transfers to validate your account.</p>
+
+            <img src="images/ven 2.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 300px;">
+
+            <h1>Venmo Limits</h1>
+
+            <p>Before you verify your identity with Venmo by adding the last four digits of your SSN, your zip code, and your birthdate to your Venmo account, you have a weekly rolling limit of $299. After your identity is verified, the following limits apply: </p>
+            <p>All transactions combined (sending funds, Authorized Merchant Payments, and Venmo Mastercard purchases combined): $4,999.99 weekly rolling limit.</p>
+            <p>Sending funds (payments to and accepted requests from other Venmo users): $2,999.99 weekly rolling limit.</p>
+            
+            <h1>Sending or Requesting a Venmo Payment</h1>
+
+            <p>When you're ready to send or request money, go to your social feed and select Pay or Request. You can choose someone from your friends list or you can search for a person. The search function works for user names (starting with @) or for first and last names.
+
+            When you find the right person you can enter a description of the transaction, an amount, and then either Pay or Request.</p>
+
+            <img src="images/ven 3.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 300px;">
+
+            <p>The default option uses any balance that you have in your Venmo account first. If you don't have sufficient Venmo funds then you can choose whether to use your bank account or a card.</p>
+
+
+
+        
+
+           
+            
+            <div class="footer">
+                <ul>
+                    
+                    <li><a href="index.html">HOME PAGE</a></li>
+                    <a href="about.HTML">ABOUT...</a>
+                    <a href="contact.HTML">CONTACT...</a>
+                    <a href="review.html">REVIEW...</a>
+                    <a href="menu.html">CANNABIS...</a>
+                    <a href="liquor.html">LIQUOR...</a>
+                    <a href="cigar.HTML">CIGAR...</a>
+
+                </ul>
+
+                
+                
+                <h6>G5 hub is a secure retailer of the finest cannabis, ciga and liquor online at the web's best prices. Please note that G5 Smoke Shop does not sell tobacco products to anyone under the age of 21 (or the minimum age in your local jurisdiction, whichever is higher). Note also that it is unlawful to even attempt to purchase cigars below the minimum age. If you are not of legal age, please do not use this site.<br>
+
+                <br>Copyright © 2023 G5 hub. Privacy Policy: INSTAGREM- WEEDY.DADDY</h6>
+
+            </div>
+            
+
+
+        </div>
+        <script>
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.bing.com/search?q=cloudflare&cvid=e7c611f3f8bd41d38f244adb4702413b&aqs=edge.0.69i64i450l8.1708413981j0j1&FORM=ANSPA1&PC=ASTS">
+        <title></title>
+
+
+    </head>
+    <body>
+
+        <style>
+
+                .container{
+                    padding: 30px;
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    gap: 90px;
+                }
+
+                .card{
+                    box-shadow: 2px 2px 8px blue;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+                }
+
+                .card-body{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .card-header img{
+                    width: 200px;
+                }
+
+                .card-body h1{
+                    font-size: 20px;
+                    color: black;
+                    margin-top: 20px;
+                }
+
+                .card-body .rate{
+                    width: 100px;
+                    margin: 5px 0;
+                } 
+
+                .card-body .price{
+                    font-size: 20px;
+                    color: orange;
+                    margin-top: 1px;
+                }
+
+                .card-body button{
+                    border: 0;
+                    padding: 20px 0;
+                    border-radius: 5px;
+                    background: orange;
+                    color: white;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+
+                @media screen and (max-width: 900px) {}
+                    .container{
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+
+            .header{
+                position: fixed;
+                width: 100%;
+                height: 100px;
+                font-weight: bold;
+                text-align: center;
+                background: white;
+                background-size: cover;
+                transition: 0.3s;   
+            }
+
+            .offset{
+                margin-top: 0;
+                padding-top: 100px;
+                text-align: center;
+                transition: 2s;
+                font-size: 15px;  
+            }
+
+
+           
+
+
+
+            /* The side navigation menu */
+            .sidenav {
+                height: 100%; /* 100% Full-height */
+                width: 0; /* 0 width - change this with JavaScript */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Stay on top */
+                top: 0;
+                left: 0;
+                background-color: #111; /* Black*/
+                overflow-x: hidden; /* Disable horizontal scroll */
+                padding-top: 60px; /* Place content 60px from the top */
+                transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            }
+
+            /* The navigation menu links */
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s
+            }
+
+            /* When you mouse over the navigation links, change their color */
+            .sidenav a:hover, .offcanvas a:focus{
+                color: #f1f1f1;
+            }
+
+            /* Position and style the close button (top right corner) */
+            .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px !important;
+                margin-left: 50px;
+            }
+
+            /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+            #main {
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+
+            /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+                @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+
+            h2{
+                font-size: 50px;
+            }
+            h4{
+                font-size: 30px;
+            }
+            h5{
+                font-size: 40px;
+            }
+            h6{
+                font-size: 15px;
+                background: #111;
+                color: white;
+            }
+            .footer{
+                background: #111;
+            }
+
+            
+            
+        </style>
+
+        <div class="header">
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+                    <li><a href="index.html">HOME PAGE</a></li>
+                    <a href="about.HTML">ABOUT...</a>
+                    <a href="menu.html">MENU...</a>
+                    <a href="contact.HTML">CONTACT...</a>
+                    <a href="review.html">REVIEW...</a>
+                    <a href="liquor.html">LIQUOR...</a>
+                    <a href="payment methods.html">ONLINE PAYMENT...</a>
+
+
+                </ul>
+                
+                
+              </div>
+              
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()"><img src="images/cart.png" style=" width: 100px; height: 100px;" > 
+            </span>
+              
+              <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+              <div id="main">
+            </div>
+
+
+
+        </div>
+
+        <div class="offset">
+
+            <h2>cigar</h2>
+            <h4>Benefits Of Cigar Smoking</h4>
+
+            <img src="images/benefits-of-smoking-sigar-1220.jpg"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p align="center">Despite the long list of health risks attached to cigars, statistics still say many people smoke cigars every day. And it does not stop there. Cigar lovers are increasing by numbers each day. Are there any side effects of smoking cigars? Are there some health benefits that we don’t know about? This guide will provide answers to all the above questions. It will also clear the confusion between cigars, cigarettes, and cigarillo. So, if you are ready to find out the benefits of cigar smoking, and why a lot of people can’t seem to stop smoking one cigar a week, read on.</p>
+
+            <h4>Do Cigar has Tobacco and What Is a Cigar?</h4>
+
+            <p align="center">A cigar is tobacco rolled in tobacco. It’s a long, thick, cylindrical roll of fermented and dried tobacco leaves. So, do cigars have tobacco? Hell yes, it does. The tobacco used to make cigars has three types. These three types of tobacco leaves are what dictate the taste and flavor of the cigar. Therefore, the leaves differ in every cigar brand. The types are:</p>
+            <img src="images/cigars-on-the-counter-1220.jpg"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p align="center">The Filler: This is the bulk of the cigar. It is the ‘fermented and dried leaves’ we mentioned at the beginning of this guide. It isn’t densely packed as many believe, instead, air passageways are allowed so that the smoke can pass through the cigar length when it is drawn. The filler can either be made from varieties of filler tobacco leaves or a single one. Also, the fatter the cigar, the more blend and flavor that can be created.
+                The Binder: This is the tobacco leaf that binds the filler tobacco leaves together. It is thick, has an uneven color distribution, and isn’t smooth. Binder tobacco leaves are usually selected for their elasticity and durability.
+                The Wrapper: It is the outermost layer of the cigar - the one that holds the brand’s band. It comes in different shades of brown and black, which indicates the type of tobacco, its age, and the level of fermentation. Black or darker shades of cigar wrapper have a sweet touch to the taste of the cigar, while or lighter shades add dryness.</p>
+                
+
+            <h4>Cigar Vs Cigarette Vs Cigarillo</h4>
+
+            <p align="center">Nonetheless, they are usually confused with each other, and it would be best to know the difference between them all before continuing to the benefits of smoking. Cigar, as mentioned earlier is a thick roll of dried and fermented tobacco leaves bonded and wrapped with other types of tobacco leaves. When smoking a cigar, the smoke is not inhaled. Instead, the cigar is simply puffed and the smoke is to be tasted. Cigarillo is a smaller version of a cigar, usually thinner, and longer. The difference between a cigar and a cigarillo is that the wrapper of a cigarillo is most times made from materials containing tobacco instead of the tobacco itself. Cigarettes, on the other hand, are thin and long rolls of dried tobacco leaves wrapped with a material that does not contain tobacco. Cigarettes also contain less nicotine than cigars or cigarillos.</p>
+
+            <img src="images/the-man-in-black-suit-smoking-cigar-1220.jpg"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <h4>The Benefits of Smoking a Cigar</h4>
+            <p align="center">Many people have asked: are there any benefits to smoking? And we are here to answer that question. Yes, cigars smoking does have advantages. This is usually a surprise to many non-smokers because of the endless list of cigar health risks including cancer, tendency to be addicted, teeth loss, and so on. So what are the benefits of smoking? Below are four concrete advantages of cigars.</p>
+
+            <h4>A Relaxed State of Being</h4>
+
+            <p align="center">The main reason we have cigar lovers is because of the highly underestimated sense of relaxation you derive. While you spend time with your beloved cigar, you can have deep thoughts, while remaining calm. The tufts of smoke can also be comforting.</p>
+
+            <h4>Class</h4>
+
+            <p align="center">Cigar smoking has been familiarized with class and high beings since the beginning of time. So, if you want to look classy in that next outing with friends, ditch the cigarettes and grab a cigar. Plus, you’ll get better vibes.</p>
+
+            <img src="images/classy-man-with-cigar-1220.jpg"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <h4>Every Process Is a Skill</h4>
+
+            <p align="center">Cigar smoking is more than putting the stick in your mouth. The entire process from cutting to lighting it, and cuffing it is a skill that needs to be perfected. Therefore, it becomes a hobby rather than just a way to pass the time. Additionally, the process is a good conversation starter when you are among cigar smokers. No wonder a lot of people love to smoke cigars. It brings a feeling that cannot be gotten from any other source.</p>
+
+            <h4>Conclusion</h4>
+
+            <p align="center">Now, you should know what is a cigar is, what it is not, and some of the benefits of cigar smoking. So, if you have learned a thing or two and you want to continue adding to your experience level with smoking, then don’t pass up this opportunity. Join our family of cigar lovers. We always share helpful and quality cigar reviews that beats the charts. And we are sure that you’ll find one that suits your taste and budget.
+
+            </p>
+
+            <img src="images/man-relaxed-with-cigars-1220.jpg"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <h5>Top 10 Best Cigars Of 2023</h5>
+
+            <img src="images/Top10Images-2022.jpg"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>2023 has been a big year for the cigar industry with countless releases from both the big-name players, as well as a variety of smaller boutique craft cigar manufacturers. With all these options, choosing the best of the best was tough work (Wink, Wink), but the expert smokers here at Famous were able to manage. We have dug deep and done the hard work to pick from all the great blends from this year, narrowing it down to our Top 10 list of cigars from 2023.
+
+                Weller by Co</p>
+            
+
+
+
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ci-cpj-gign.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>SHOP CAO PILON ANEJO CIGARS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>Good things take time. Great things take even more. With two years of additional aging for added flavor, Pilón Anjeo is the sequel to 2015’s popular CAO Pilón blend we’ve all been waiting for. The cigar is named after the stacks of tobacco leaves assembled for the fermentation process. These pilónes generate heat and remove impurities, making the tobacco darker, stronger, and much more flavorful.</p>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ci-hnh-chum.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>H. UPMANN NICARAGUA AJ FERNANDEZ HERITAGE CIGARS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>The H.Upmann brand is respected as one of the oldest and trusted premium cigar brands manufactured today. Starting in 1844 by two brothers who were pioneers in the cigar industry. For its new H. Upmann Nicaragua Heritage line the brand once again turned to cigar extraordinaire AJ Fernandez.</p>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ci-hvc-2n.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>SHOP HVC VIEJA COSECHA CIGARS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>One of HVC’s most popular cigar blends, Vieja Cosecha, has arrived at Famous! Vieja Cosecha means old crop, and with five-year-aged tobaccos in every position, this HVC stick certainly lives up to its name. Those tobaccos are all-Nicaraguan from Aganorsa’s farms, including a Criollo ’98 wrapper. These give the cigar buttery, full-bodied flavors of earth, citrus, wood, and sweet spices from every puff. Light one up yourself and see if you agree—get your box at a Famous-ly low price today!</p>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ci-lsd-chun.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>SHOP LOS STATOS DELUXE CIGARS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>This version of Los Statos Deluxe is unlike any previous incarnations—from the artwork to the new recipe. This new variation uses a blend of select, top-grade tobaccos, leading off with a gorgeous Ecuador Sumatra wrapper atop a Nicaraguan binder, and proprietary Nicaraguan and Dominican long fillers. Expect a medium-bodied experience with flavors of earth, baking spices, dark chocolate, and strong but smooth coffee that are lively and restrained.</p>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ci-p49-azpm.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>BUY PLASENCIA COSECHA 149</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>Plasencia Cosecha 149 Cigars are named for the family?s 149th harvest?that?s cosecha in Spanish?and this particular harvest is from 2014. Do the math and you?ve got some real fully-aged leaf humming throughout what could be called an all-Honduran tobacco showcase. Starting with a darkish Olancho Criollo wrapper from San Agustin, below that you?ll find a Jamastran Corojo binder along with Talanga and Olancho Criollo, and more Jamastran Corojo. Produced in only three sizes, Santa Fe (4¾?x 60), La Vega (5?x52), and a Azacualpa (6?x52), each vitola is presented in boxes of 10 cigars. Medium to full in body, Plasencia rides again with these stunning puros that sizzle with rich Honduran spice at a pretty reasonable price. Order your box soon, because these move fast.</p>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ci-olm-robm.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>SHOP FOUNDATION OLMEC CIGARS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>Foundation Olmec cigars pay homage to the original cigar smokers, the ancient Mesoamerican people of Mexico. Olmec cigars is Master Blender Nick Melillo’s tribute to the ancient civilization considered the “Mother Culture” of Mesoamerica that was one of the first to ever smoke and cultivate tobacco in the same soils that the Mexican San Andres wrapper is grown in. Olmec cigars feature two different Mexican San Andres wrappers, a light Claro and a dark Maduro. Its blend consists of Nicaraguan filler tobaccos from the Estelí and Jalapa valleys bale-aged for three years.</p>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ci-rtc-shobn.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>ROJAS STREET TACOS BARBACOA</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>Long before #TacoTuesday ever trended on Twitter, the ‘street taco’ was popular cuisine, finding its way into the U.S. through Mexican immigrants in circa 1800s Los Angeles – and quickly spreading like wildfire. Noel Rojas pays tribute to this culinary pop culture icon with Rojas Street Tacos which are rolled in three popular sizes (Robusto, Toro, and Short Corona) at Tabacalera Flor de San Luis in Nicaragua.
+
+                            The Street Tacos Barbacoa cigar blend features an Ecuador Sumatra wrapper, and a binder/filler core of all-Nicaraguan long leaf tobaccos. These tobaccos give the cigar notes of coffee, dry wood, pepper, and an earthy, salty sweetness. They’re full-bodied – hitting the spot after a filling meal – and go bigger on flavor than their price tag suggests. Grab your box at the best price and add it to your Famous cart now!</p>
+                        
+                            
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ci-wbc-torm.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>COHIBA WELLER CIGARS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>Cigars and bourbon go together like mac and cheese, Han and Chewy, or milk and cookies. The new Weller by Cohiba was purposefully blended to pair with bourbon—but not just any old bottle. A distinguished cigar like this new Cohiba needs its equal and finds it in legendary the bourbon, W.L. Weller 12 Year.
+
+                            The initial release of Weller by Cohiba takes top-shelf tobaccos—aged Honduran Olancho Maduro wrapper, rare US Connecticut Habano-seed binder, and long fillers from the Dominican Republic and Nicaragua—and creates a blend that both marries perfectly with its intended bourbon or stands on its own. Weller by Cohiba is medium to full-bodied and maintains a perfectly balanced and creamy profile with notes of cocoa, tobacco, and leather.</p>
+                        
+                            
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ci-wcc-dos77.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>BUY WARPED CHOGUI CIGARS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>Chogui was the hard-to-find king of the ultra-boutiques back in the day. The original cigars were talked about in hushed tones by cigar fanatics and raved about in the blogosphere. For a curious enthusiast obtaining even a paltry 5 pack was impossible without either connections or paying up on the grey market. The brand had strong headwinds and then—due to FDA regulations—Chogui quietly disappeared in 2018.
+
+                            Enter Warped Cigar’s Kyle Gellis and his new distribution company, Venture 1492. Specializing in bringing the next generation of small batch boutique brands to the wider market, the dormant Chogui was an ideal brand for revival. Already with a rabid following, Chogui is once again proving to be an emerging must try boutique brand.</p>
+                        
+                            
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ci-eks-torm.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>GUY FIERI KNUCKLE SANDWICH CIGARS BY ESPINOSA</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p> If a cigar could have frosted tips and wear a visor, it’d be Espinosa Knuckle Sandwich. Made in partnership with Guy Fieri aka Mayor of Flavortown, and LaZona master blender, Erik Espinosa, the blend is produced by master cigar chef, AJ Fernandez and his San Lotano factory in Nicaragua. According to Erik, “Guy’s a cigar guy, loves to smoke, and is super excited about this project.”
+
+                            So…what does a cigar blended by America’s favorite chef taste like? Pick the Ecuador Habano wrapper, and you’ll get a zesty burst of sweetness in every puff, with a long finish of warm spices. Or choose the Ecuador Maduro, with notes of fresh coffee grounds, cocoa, and a dusting of black pepper.</p>   
+                    </div>
+                </div>
+            </div>
+
+            <h4>How To Prevent Cigars From Spoilage</h4>
+
+            <img src="images/prevention-cigars-from-spoilage-1220 (1).jpg"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>If you've ever been around someone smoking an aged cigar — or, say, you've smoked one yourself — you know it's one of the most unpleasant things you can do. Cigars are both a joy and an investment. It's worth putting in a little extra work to keep them fresh for a longer period. While investing in a humidor is the most obvious way to keep cigars fresh, it isn't always viable – humidors are expensive and can take up the room you don't have. There are, however, some measures you may take to extend your cigar life and keep it fresher.</p>
+
+            <p>Keep your cigars away from the refrigerator.<br> <br>While some cigar smokers would advise you to keep your aging cigars in the refrigerator, this is not a good idea. And this is because the cool, dry air in the fridge can quickly dry out your old cigars, which is the exact opposite of what you want. Cigars absorb (and impart) the flavors of the objects surrounding them, so storing them with yesterday night's marinara or tomorrow's vanilla yogurt is not a good idea. Also, don't put them in the freezer; they'll dry up even faster than in the fridge.</p>
+
+            <p>Close it up!<br> <br>Placing your cigars in a freezer bag with a wet sponge or paper towel and then firmly closing it is one of the simplest ways to keep them fresh and prevent a moldy cigar. The idea behind this is that the sponge or paper towel will provide humidity, which the airtight seal will lock-in. If you're going to keep your cigars for a long time, ensure the sponge or towel hasn't dried out. If this is the case, remoisten it and place it back in the bag. This would improve your cigar life span.</p>
+            
+            <p>Don't choke your cigar.<br> <br>This may sound paradoxical; however, it's advisable to remove the cellophane wrapper before storing your cigars. This would permit the cigar to absorb the dampness completely. One caveat: If you're going to be transporting your cigars, keep the cellophane on. This aids with the protection of the cigars during transportation.</p>
+
+            <p>Convert your cooler to a humidor.<br> <br>You're shocked, right? But the fact is you can convert a regular cooler (the kind you take to getaways) into a humidor. It is better to start with a new cooler to prevent any leftover scents from seeping into your cigar- placing a wet sponge in the cooler with your cigars is the simplest way to make a "coolidor." Then remember to inspect the sponge regularly. You can also buy humidification equipment, distilled water, and a hydrometer to establish a humidification system that requires very little maintenance.</p>
+
+            <img src="images/cigars-in-bag-1220.jpg"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <h4>Conclusion</h4>
+
+            <p>How long do cigarettes last mostly depends on their temperature and humidity. If your store them well, chances are that they can remain fresh for several years. We hope you find this article helpful. The good thing is, you now know to solve your aging cigars problem. To learn more about cigars, cigarettes, and smoking, check out our best cigars reviews. Here you will find everything that fits your budget, taste and take your smoking to the next level of smoking.</p>
+
+            <div class="footer">
+                <ul>
+                    <li><a href="index.html">HOME PAGE</a></li>
+                    <a href="about.HTML">ABOUT...</a>
+                    <a href="menu.html">MENU...</a>
+                    <a href="contact.HTML">CONTACT...</a>
+                    <a href="review.html">REVIEW...</a>
+                    <a href="liquor.html">LIQUOR...</a>
+                    <a href="payment methods.html">ONLINE PAYMENT...</a>
+
+                </ul>
+                <a href="https://www.instagram.com/direct/inbox/">instagram...</a>
+
+                <h6>G5 Smoke is a secure retailer of the finest cigars online at the web's best prices. Please note that G5 Smoke Shop does not sell tobacco products to anyone under the age of 21 (or the minimum age in your local jurisdiction, whichever is higher). Note also that it is unlawful to even attempt to purchase cigars below the minimum age. If you are not of legal age, please do not use this site.<br>
+
+                <br>Copyright © 2023 G5 smoke shop. Privacy Policy INSTAGREM- WEEDY.DADDY</h6>
+            </div>
+            
+
+
+            
+            
+        </div>
+
+
+        <script>
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+
+    </body>
+</html>

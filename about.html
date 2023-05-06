@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.bing.com/search?q=cloudflare&cvid=e7c611f3f8bd41d38f244adb4702413b&aqs=edge.0.69i64i450l8.1708413981j0j1&FORM=ANSPA1&PC=ASTS">
+        <title></title>
+
+
+    </head>
+    <body>
+
+        <style>
+
+            body{
+                background: url(images/logo.jpg);
+                background-size: cover;
+            }
+
+            .header{
+                position: fixed;
+                width: 100%;
+                height: 100px;
+                font-weight: bold;
+                text-align: center;
+                background: white;
+                background-size: cover;
+                transition: 0.3s;   
+            }
+
+            .offset{
+                margin-top: 0;
+                padding-top: 50px;
+                text-align: center;
+                transition: 2s;
+                font-size: 15px; 
+            }
+
+
+
+
+           
+
+
+
+            /* The side navigation menu */
+            .sidenav {
+                height: 100%; /* 100% Full-height */
+                width: 0; /* 0 width - change this with JavaScript */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Stay on top */
+                top: 0;
+                left: 0;
+                background-color: #111; /* Black*/
+                overflow-x: hidden; /* Disable horizontal scroll */
+                padding-top: 60px; /* Place content 60px from the top */
+                transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            }
+
+            /* The navigation menu links */
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s
+            }
+
+            /* When you mouse over the navigation links, change their color */
+            .sidenav a:hover, .offcanvas a:focus{
+                color: #f1f1f1;
+            }
+
+            /* Position and style the close button (top right corner) */
+            .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px !important;
+                margin-left: 50px;
+            }
+
+            /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+            #main {
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+
+            /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+                @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+
+
+
+            /* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    float: left; 
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    height: 100px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+            span{
+                font-size: 40px;
+                text-transform: capitalize;
+                color: green;
+                font-weight: bold;
+
+            }
+
+            h1{
+                margin-top: 100px;
+                font-weight: bold;
+                font-size: 40px;
+                text-transform: capitalize;
+                color: green;
+            }
+
+            h2{
+                color: green;
+                font-size: 20px;
+            }
+
+            h3{
+                color: green;
+                font-size: 30px;
+                margin-top: 50px;
+            }
+
+            p{
+                float: left;
+                font-weight: bold;
+                color: white;
+            }
+
+            h4{
+                color: white;
+            }
+
+            h5{
+                background: url(images/logo3.jpg);
+                background-size: cover;
+                font-size: 16px;
+                color: white;
+            }
+
+            
+            
+           
+            
+
+
+            
+        </style>
+
+        <div class="header">
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+
+                    <li><a href="index.html">HOME PAGE...</a></li>
+                    <a href="contact.HTML">CONTACT...</a>
+                    <a href="menu.html">CANNABIS..</a>
+                    <a href="cigar.HTML">CIGAR...</a>
+                    <a href="liquor.html">LIQUOR...</a>
+                    <a href="review.html">REVIEW...</a>
+                    <a href="payment methods.html">ONLINE PAYMENT...</a>
+
+
+
+                    <h5 align="center">Cannabis also known as marijuana among other 
+                        names, is a psychoactive drug from the cannabis plant. Native 
+                        to central or South Asia, the cannabis plant has been used as a 
+                        drug for both recreaditional and entheogenic purposes and in various 
+                        traditional medecine for centuries.
+                    </h5>
+
+                </ul>
+                
+                
+              </div>
+              
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()"><img src="images/cart.png" style=" width: 100px; height: 100px;" > 
+            </span>
+              
+              <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+              <div id="main">
+            </div>
+
+
+
+        </div>
+
+        <div class="offset">
+            
+            <h1>about us</h1>
+
+            <!-- Trigger the Modal -->
+            <img id="myImg" src="images/logo2.jpg" alt="Trolltunga, Norway" width="200" height="100">
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <h3 align="center">HEALTH BENEFITS OF SMOKING CANNABIS</h3>
+
+            <h2 align="center">RELIEF OF CHRONIC PAIN</h2>
+
+            <h4 align="center">there are hundreds of chemical <br>compounds in cannabis, many of which
+                are cannabinoids. cannabinoids have<br> been liked to providing relief of
+                chronic pain due to their chemical<br> makeup. which is why cannabis'by-product such
+                as medical cannabis is<br> commonly used for chronil pain relief.
+            </h4>
+            
+            
+            <h2 align="center">IMPROVES LUNG CAPACITY</h2>
+
+            <h4 align="center">unlike smoking cigarettes, when smoking<br> cannabis
+                in the form of cannabis your<br> lungs aren't harmed. in fact a study
+                found that cannabis actually<br> helps increase the capacity of the lungs
+                rather than cause any harm to it.
+            </h4>
+
+            <h2 align="center">HELP LOSE WEIGHT</h2>
+
+            <h4 align="center">if you look arount, you'll notice<br> that the avid cannabis
+                user is usually not overweight.<br> that is becouse cannabis is 
+                linked to aiding your body in <br>regulating insulin while managing caloric
+                intake efficiently.
+            </h4>
+
+            <h2 align="center">HELPS TREAT DEPRESSION</h2>
+
+            <h4 align="center">depression is widespread wthout most<br> people
+                even knowing they have it. <br>The endocannabinoid compounds in 
+                cannabis can help in stabilising<br> moods which can ease depression.
+            </h4>
+
+             <h2 align="center">TREATMENT FOR GLAUCOMA</h2>
+
+            <h4 align="center">Glaucoma leads to additional pressure on the <br>eyeball
+                which is painfull for individuals <br>with the disorder. cannabis can help
+                reduce the pressure<br> applied on the eyball providing some
+                temporary <br>relief to individuals with<br> glaucoma.
+            </h4>
+
+            <h2 align="center">ALLEVIATE ANXIETY</h2>
+
+            <h4 align="center">While cannabis is commonly known to couse <br>anxiaty,
+                there is a<br> way around that. taken in monitored <br>dosage and in the 
+                proper way, cannabis can help alleviate<br> anxiety and calm useres down.
+            </h4>
+
+            <h5 align="center"> NORTHEN LIGHTS<br> <br>without a doubt, northern lights 
+              is one of the best cannabis strains for pain, and insomnia.<br>
+              <br>ACAPULCO GOLD<br> <br>acapulco gold is a rare sativa marijuana straim. it's 
+              noted for its euphoria-inducing, energizing effect. it's said to reduce fatigue
+              ,stress, pain, and even nausea.<br> <br>BLUE DREAM<br> 
+              <br>blue dream is relaxing and soothing, but it isn't a total sedative.
+              this makes it perffect  for easing pain, cramps, or inflammation for when 
+              you can't afford to fall asleep.<br> <br>PURPLE KUSH<br> <br>purple kush is 
+              great for inducing a state of bliss so that you feel relaxed, happy, and 
+              sleepy. it's often used for reducing pain and muscle spasms.
+              it's sedating effect means it can be used to reduce insomnia.<br> <br>BUBBA KUSH<br> 
+              <br>bubba kush is a relaxing, sleep-inducing strain. it's perfect for helping 
+              you fight insomnia and get some shut-eye. it also offers pain-reducing, stress-relieving 
+              result.
+
+            </h5> 
+
+            <div class="footer">
+                <ul>
+                    <li><a href="index.html">HOME PAGE</a></li>
+                    <a href="about.HTML">ABOUT...</a>
+                    <a href="contact.HTML">CONTACT...</a>
+                    <a href="menu.html">CANNABIS...</a>
+                    <a href="liquor.html">LIQUOR...</a>
+                    <a href="cigar.HTML">CIGAR...</a>
+    
+                </ul>
+                
+                
+                <p><br>Copyright © 2023 G5 hub. Privacy Policy</p>
+            </div>
+
+            
+            
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+
+            <h1>hhhhhhhhhhhhhh</h1>
+            </div>
+              
+
+            <p>
+            The elegant <span>G5 HUB</span> hub connects service providers 
+            and other stakeholders from various sectors across the world with 
+            credible, evidence based information on the helth bennefit of cannabis.
+            The hub also sells cannabis, cigars and some expensive bottles of liquor.
+            We're based in GERMANY and we deliver across the world
+            </p>
+
+            
+            
+
+ 
+            
+        </div>
+
+        
+        
+        <script>
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+
+            // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+        </script>
+
+
+    </body>
+</html>

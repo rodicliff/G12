@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.bing.com/search?q=cloudflare&cvid=e7c611f3f8bd41d38f244adb4702413b&aqs=edge.0.69i64i450l8.1708413981j0j1&FORM=ANSPA1&PC=ASTS">
+        <title></title>
+
+
+    </head>
+    <body>
+
+        <style>
+
+                .container{
+                    padding: 30px;
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    gap: 90px;
+                }
+
+                .card{
+                    box-shadow: 2px 2px 8px blue;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+                }
+
+                .card-body{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .card-header img{
+                    width: 200px;
+                }
+
+                .card-body h1{
+                    font-size: 10px;
+                    color: orange;
+                    margin-top: 20px;
+                }
+
+                .card-body .rate{
+                    width: 80px;
+                    margin: 5px 0;
+                } 
+
+                .card-body .price{
+                    font-size: 20px;
+                    color: orange;
+                    margin-top: 1px;
+                }
+
+                .card-body button{
+                    border: 0;
+                    padding: 20px 0;
+                    border-radius: 5px;
+                    background: orange;
+                    color: white;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+
+                @media screen and (max-width: 900px) {}
+                    .container{
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+
+            .header{
+                position: fixed;
+                width: 100%;
+                height: 100px;
+                font-weight: bold;
+                text-align: center;
+                background: white;
+                background-size: cover;
+                transition: 0.3s;   
+            }
+
+            .offset{
+                margin-top: 0;
+                padding-top: 100px;
+                text-align: center;
+                transition: 2s;
+                font-size: 15px;
+                
+                
+            }
+
+
+           
+
+
+
+            /* The side navigation menu */
+            .sidenav {
+                height: 100%; /* 100% Full-height */
+                width: 0; /* 0 width - change this with JavaScript */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Stay on top */
+                top: 0;
+                left: 0;
+                background-color: #111; /* Black*/
+                overflow-x: hidden; /* Disable horizontal scroll */
+                padding-top: 60px; /* Place content 60px from the top */
+                transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            }
+
+            /* The navigation menu links */
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s
+            }
+
+            /* When you mouse over the navigation links, change their color */
+            .sidenav a:hover, .offcanvas a:focus{
+                color: #f1f1f1;
+            }
+
+            /* Position and style the close button (top right corner) */
+            .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px !important;
+                margin-left: 50px;
+            }
+
+            /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+            #main {
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+
+            /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+                @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+
+            span{
+                color: black;
+                font-size: 60px;
+                font-weight: bold;
+            }
+
+            h2{
+                color: green;
+                font-size: 40px;
+                font-weight: bold;
+                float: left;
+            }
+
+            h3{
+                color: green;
+                font-size: 40px;
+                font-weight: bold;
+                float: left;
+                margin-top: 150px;
+                
+            }
+
+            p{
+                color: black;
+                font-weight: bold;
+                font-size: 15px;
+                margin-top: 180px;  
+            }
+
+            p{
+                color: black;
+            }
+
+            .map iframe{
+                float: right;
+                margin-bottom: 30px;
+                width: 420px;
+            } 
+
+            .footer{
+                background: #111;
+                font-size: 20px;
+                font-style: oblique;
+                color: white;
+            }
+        </style>
+
+        <div class="header">
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+
+                    <a href="about.HTML">ABOUT...</a>
+                    <a href="menu.html">MENU...</a>
+                    <a href="contact.HTML">CONTACT...</a>
+                    <a href="review.html">REVIEW...</a>
+                    <a href="cigar.HTML">CIGAR...</a>
+                    <a href="liquor.html">LIQUOR...</a>
+                    <a href="payment methods.html">ONLINE PAYMENT...</a>
+
+                </ul>
+                
+                
+              </div>
+              
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()"><img src="images/cart.png" style=" width: 100px; height: 100px;" > 
+            </span>
+              
+              <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+              <div id="main">
+            </div>
+
+
+
+        </div>
+
+        <div class="offset">
+
+            <!-- map -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d621714.0922522559!2d12.765174350123393!3d52.50501072268523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBerlin!5e0!3m2!1sen!2scm!4v1682563208751!5m2!1sen!2scm"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            </div>
+            <h2>welcome to the<br> <span>G5</span> <br> hub</h2>
+
+            <p>Cannabis (often called marijuana) comes from the 
+                cannabis plan. it contains the active ingredient delta-9 
+                tetraHydrocannabis (THC), which affects brain function. the flower and 
+                leaves of the cannabis plan are dreid, then smoked or eaten for the 
+                psychoactive effects of THC, which can alter percention and mood.
+            </p>
+
+            <img src="images/lo 4.webp"  alt="put" style="width:  650px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>Cannabis, also referred to as marijuana, has been an integral part of human civilizations for millennia. Both as a medicine and as a recreational substance, cannabis is the most popular illicit drug in the world. Today, the legal landscape that has prohibited marijuana for much of the twentieth century is giving way to decriminalization and full legalization. Legal, commercial cannabis businesses are already making an enormous economic impact.</p>
+        
+
+            <img src="images/north 6.jpg"  alt="put" style="width:  600px; margin: 1px auto;
+            display: block; height: 300px;">
+
+            <p>Liquor is an alcoholic drink produced by distillation of grains, fruits, vegetables, or sugar, that have already gone through alcoholic fermentation. Other terms for liquor include: spirit, distilled beverage, spirituous liquor or hard liquor. The distillation process concentrates the liquid to increase its alcohol by volume. As liquors contain significantly more alcohol than other alcoholic drinks, they are considered 'harder'; in North America, the term hard liquor is sometimes used to distinguish distilled alcoholic drinks from non-distilled ones, whereas the term spirits is more common in the UK. Some examples of liquors include vodka, rum, gin, and tequila. Liquors are often aged in barrels, such as for the production of brandy and whiskey, or are infused with flavorings to form a flavored liquor such as absinthe.</p>
+    
+
+            <img src="images/ci-rtc-shobn.webp"  alt="put" style="width:  600px; margin: 1px auto;
+            display: block; height: 400px;">
+
+            <p>Despite the long list of health risks attached to cigars, statistics still say many people smoke cigars every day. And it does not stop there. Cigar lovers are increasing by numbers each day. Are there any side effects of smoking cigars? Are there some health benefits that we don’t know about? This guide will provide answers to all the above questions. It will also clear the confusion between cigars, cigarettes, and cigarillo. So, if you are ready to find out the benefits of cigar smoking, and why a lot of people can’t seem to stop smoking one cigar a week, read more on cigar.</p>
+
+
+            <div class="footer">
+                <ul>
+                    
+                    
+                    <a href="about.HTML">ABOUT...</a>
+                    <a href="contact.HTML">CONTACT...</a>
+                    <a href="review.html">REVIEW...</a>
+                    <a href="menu.html">CANNABIS...</a>
+                    <a href="liquor.html">LIQUOR...</a>
+                    <a href="cigar.HTML">CIGAR...</a>
+                    <a href="payment methods.html">ONLINE PAYMENT...</a>
+
+                </ul>
+
+                <h6>G5 hub is a secure retailer of the finest cannabis, ciga and liquor online at the web's best prices. Please note that G5 Smoke Shop does not sell tobacco products to anyone under the age of 21 (or the minimum age in your local jurisdiction, whichever is higher). Note also that it is unlawful to even attempt to purchase cigars below the minimum age. If you are not of legal age, please do not use this site.<br>
+
+                <br>Copyright © 2023 G5 hub. Privacy Policy :INSTAGREM- WEEDY.DADDY</h6>
+            </div>
+            
+
+
+        </div>
+        <script>
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.bing.com/search?q=cloudflare&cvid=e7c611f3f8bd41d38f244adb4702413b&aqs=edge.0.69i64i450l8.1708413981j0j1&FORM=ANSPA1&PC=ASTS">
+        <title></title>
+
+
+    </head>
+    <body>
+
+        <style>
+
+            .header{
+                position: fixed;
+                width: 100%;
+                height: 100px;
+                font-weight: bold;
+                text-align: center;
+                background: white;
+                background-size: cover;
+                transition: 0.3s;   
+            }
+
+            .offset{
+                margin-top: 0;
+                padding-top: 60px;
+                text-align: center;
+                transition: 2s;
+                font-size: 15px;
+            }
+
+
+            /* The side navigation menu */
+            .sidenav {
+            height: 100%; /* 100% Full-height */
+            width: 0; /* 0 width - change this with JavaScript */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 0;
+            left: 0;
+            background-color: #111; /* Black*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 60px; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        }
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover, .offcanvas a:focus{
+            color: #f1f1f1;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px !important;
+            margin-left: 50px;
+        }
+
+        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+        #main {
+            transition: margin-left .5s;
+            padding: 20px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+
+        section{
+            padding: 2rem 7%;
+        }
+
+        .about{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: url(images/asus\ zenbook\ 13.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .about .content{
+            max-width: 60rem;
+        }
+
+        .about .content h1{
+            font-size: 6rem;
+            text-transform: uppercase;
+            color: blue;
+        }
+
+        .about .content p{
+            font-size: 1rem;
+            font-weight: lighter;
+            color: blue;
+            line-height: 1.8;
+            padding: 1rem 0;
+    
+        }
+
+        /*google fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+        *{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            
+            
+        }
+
+        .contac-container{
+            max-width: 960px;
+            margin: auto;
+            width: 100%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(2,1fr);
+            top: 1.5rem;
+            box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+            border-radius: 1.5rem;
+            overflow: hidden;
+        }
+
+        .form-container{
+            padding: 20px;
+        }
+        .form-container h3{
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: black;
+        }
+        .contact-form{
+            display: grid;
+            row-gap: 1rem;
+        }
+        .contact-form input{
+            width: 100%;
+            border: none;
+            outline: none;
+            background: #2c2f48;
+            padding: 10px;
+            font-size: 0.9rem;
+            color: #fff;
+            border-radius: 0.4rem;
+        }
+        .contact-form textarea{
+            resize: none;
+            height: 200px;
+            background:#2c2f48 ;
+        }
+        .contact-form .send-button{
+            border: none;
+            outline: none;
+            background: #00dbde;
+            font-size: 1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .contact-form .send-button:hover{
+            background: hsl(181, 100%, 44%, 0.8);
+            transition: 0,3s all linear;
+        }
+        .map iframe{
+            width: 100%;
+            height: 400px;
+        }
+        /* making responsive */
+        @media (max-width:964px) {
+            .contac-container{
+                margin: 0 auto;
+                width: 90%;
+            }
+            
+        }
+
+        .footer{
+            background: #111;
+            color: black;
+        }
+
+        h6{
+            font-size: 15px;
+            font-style: italic;
+            font-weight: 50;
+        }
+
+
+
+
+
+    
+
+       
+        
+
+
+        
+        
+
+
+        </style>
+
+        <div class="header">
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li><a href="index.html">HOME PAGE...</a></li>
+                <a href="about.html">ABOUT...</a>
+                <a href="review.html">REVIEW...</a>
+                <a href="menu.html">CANNABIS...</a>
+                <a href="liquor.html">LIQUOR...</a>
+                <a href="cigar.HTML">CIGAR...</a>
+                <a href="payment methods.html">ONLINE PAYMENT...</a>
+
+
+            </div>
+              
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()"><img src="images/cart.png" style=" width: 100px; height: 100px;" > 
+            </span>
+              
+              <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+              <div id="main">
+            </div>
+
+
+
+        </div>
+
+        <div class="offset">
+
+            <section>
+                    <!-- contact container -->
+                    <div class="contac-container">
+                        <!-- form -->
+                        <div class="form-container">
+                            <h3>Message Us</h3>
+                            <form action="" class="contact-form">
+                                <input type="text" placeholder="Your Name" required>
+                                <input type="email" name="" id="" placeholder="Enter Your Email..." required>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                                <input type="submit" value="send" class="send-button"> 
+                            </form>
+                        </div>
+                        <!-- map -->
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d621714.0922522559!2d12.765174350123393!3d52.50501072268523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBerlin!5e0!3m2!1sen!2scm!4v1682563208751!5m2!1sen!2scm"
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                        </div>
+                    </div>     
+                
+            </section>
+
+
+            
+            <div class="footer">
+                <ul>
+                    <li><a href="index.html">HOME PAGE</a></li>
+                    <a href="about.HTML">ABOUT...</a>
+                    <a href="contact.HTML">CONTACT...</a>
+                    <a href="review.html">REVIEW...</a>
+                    <a href="menu.html">CANNABIS...</a>
+                    <a href="liquor.html">LIQUOR...</a>
+                    <a href="cigar.HTML">CIGAR...</a>
+                    <a href="payment methods.html">ONLINE PAYMENT...</a>
+    
+                </ul>
+
+                <a href="https://www.instagram.com/direct/inbox/">instagram...</a>
+
+                <h6>G5 HUB is a secure retailer of the finest cigars cannabis and liquor online at the web's best prices. Please note that hub does not sell tobacco products to anyone under the age of 81 (or the minimum age in your local jurisdiction, whichever is higher). Note also that it is unlawful to even attempt to purchase any of our product below the minimum age. If you are not of legal age, please do not use this site.<br>
+    
+                <br>Copyright © 2023 G5 hub. Privacy Policy: INSTAGRAM-WEDDY.DADDY</h6>
+            </div>
+         
+        </div>
+
+        
+        
+        
+
+
+       
+        
+
+        <script>
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+
+    </body>
+</html>

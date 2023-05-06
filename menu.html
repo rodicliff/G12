@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.bing.com/search?q=cloudflare&cvid=e7c611f3f8bd41d38f244adb4702413b&aqs=edge.0.69i64i450l8.1708413981j0j1&FORM=ANSPA1&PC=ASTS">
+        <title></title>
+
+
+    </head>
+    <body>
+
+        <style>
+
+
+                .container{
+                    padding: 30px;
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    gap: 90px;
+                }
+
+                .card{
+                    box-shadow: 2px 2px 8px blue;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+                }
+
+                .card-body{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .card-header img{
+                    width: 200px;
+                }
+
+                .card-body h1{
+                    font-size: 10px;
+                    color: orange;
+                    margin-top: 20px;
+                }
+
+                .card-body .rate{
+                    width: 80px;
+                    margin: 5px 0;
+                } 
+
+                .card-body .price{
+                    font-size: 20px;
+                    color: orange;
+                    margin-top: 1px;
+                }
+
+                .card-body button{
+                    border: 0;
+                    padding: 20px 0;
+                    border-radius: 5px;
+                    background: orange;
+                    color: white;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+
+                @media screen and (max-width: 900px) {}
+                    .container{
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+
+            .header{
+                position: fixed;
+                width: 100%;
+                height: 100px;
+                font-weight: bold;
+                text-align: center;
+                background: white;
+                background-size: cover;
+                transition: 0.3s;   
+            }
+
+            .offset{
+                margin-top: 0;
+                padding-top: 100px;
+                text-align: center;
+                transition: 2s;
+                font-size: 15px;
+            }
+
+
+            /* The side navigation menu */
+            .sidenav {
+                height: 100%; /* 100% Full-height */
+                width: 0; /* 0 width - change this with JavaScript */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Stay on top */
+                top: 0;
+                left: 0;
+                background-color: #111; /* Black*/
+                overflow-x: hidden; /* Disable horizontal scroll */
+                padding-top: 60px; /* Place content 60px from the top */
+                transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            }
+
+            /* The navigation menu links */
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s
+            }
+
+            /* When you mouse over the navigation links, change their color */
+            .sidenav a:hover, .offcanvas a:focus{
+                color: #f1f1f1;
+            }
+
+            /* Position and style the close button (top right corner) */
+            .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px !important;
+                margin-left: 50px;
+            }
+
+            /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+            #main {
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+
+            /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+        .footer{
+            background: #111;
+        }
+        h6{
+            font-size: 15px;
+            font-style: oblique;
+            color: white;
+        }
+        h4{
+            font-size: 40px;
+        }
+
+        h2{
+            font-size: 30px;
+        }
+        
+        h5{
+            background: url(images/logo6.png);
+            background-size: cover;
+            color: black;
+            font-size: 15px;
+        }
+       
+            
+
+
+        </style>
+
+        <div class="header">
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+                <li><a href="index.html">HOME PAGE</a></li>
+                    <a href="about.HTML">ABOUT...</a>
+                    <a href="review.html">REVIEW...</a>
+                    <a href="contact.HTML">CONTACT...</a>
+                    <a href="menu.html">CANNABIS...</a>
+                    <a href="liquor.html">LIQUOR...</a>
+                    <a href="cigar.HTML">CIGAR...</a>
+                    <a href="payment methods.html">ONLINE PAYMENT...</a>
+            </div>
+              
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()"><img src="images/cart.png" style=" width: 100px; height: 100px;" > 
+            </span>
+              
+              <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+              <div id="main">
+                ...
+            </div>
+
+
+
+        </div>
+
+        <div class="offset">
+
+            <h4>G5 hub</h4>
+
+            <h2>Everything You Need To Know About Marijuana: What Is Cannabis?</h2>
+
+            <p>Cannabis, legally referred to as marijuana, has had a place in civilization for millennia. Here’s everything you need to know about it.</p>
+
+            <img src="images/canna 1.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>Cannabis, also referred to as marijuana, has been an integral part of human civilizations for millennia. Both as a medicine and as a recreational substance, cannabis is the most popular illicit drug in the world. Today, the legal landscape that has prohibited marijuana for much of the twentieth century is giving way to decriminalization and full legalization. Legal, commercial cannabis businesses are already making an enormous economic impact.</p>
+
+            <p>Thus, marijuana is re-emerging as an important cultural, social and political force, yet knowledge about the drug is incomplete, inconsistent and plagued by false information. As a result, the demand for trustworthy, accurate information about cannabis is at an all-time high.</p>
+            <p>This guide is an introduction to anyone looking to inform themselves about the reality of cannabis. It covers basic information about the marijuana plant, cannabis preparations, and the crucial elements of plant anatomy and science. This guide to marijuana also gives an overview of the most popular medical and recreational uses of cannabis. It offers a survey of the most important medical cannabis research while highlighting emerging trends in the legal cannabis market. The guide also introduces those new to cannabis to the many ways to consume marijuana, and much more.</p>
+            <p>Ultimately, this guide explains everything you need to know about marijuana, so you can be fully informed next time you answer the question, what is cannabis?</p>
+
+            <h2>Methods Of Consuming Cannabis</h2>
+
+            <img src="images/cana 2.webp"  alt="put" style="width:  650px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>The exploding recreational market for marijuana has rapidly popularized many methods of consuming cannabis that was decidedly part of the fringe just a few short years ago. Smoking marijuana remains the most widely embraced method, due to the greater accessibility of marijuana flower. But legal recreational cannabis is introducing many marijuana users to new forms of the drug, especially concentrates and edibles. Here’s a brief overview of the major methods for consuming marijuana.</p>
+
+            <h2>Smoking</h2>
+
+            <p>Smoking marijuana is hands down the most widely used method of consuming cannabis. It’s also the simplest: a rolling paper and some dried marijuana flower are all you need. Other, more technological methods of smoking marijuana may be rising in popularity. But for many people, the social experience of passing weed around with some friends is what cannabis is all about.</p>
+
+            <p>Over the ages, countless innovations have attempted to improve on the basic experience of inhaling the smoke of combusted cannabis. As a result, there are numerous ways to smoke marijuana. The rolling technique is at the root of joints, blunts, and spliffs. On the other hand, glassware and other devices are essential for smoking weed out of a pipe, bong, or bubbler.</p>
+
+            <h2>Vaping Cannabis Oil</h2>
+
+            <p>The onset of legal recreational markets for marijuana has led to a dramatic upsurge in the method of vaporizing cannabis, aka “vaping.” In many ways vaping cannabis has quite a bit in common with the process of vaping tobacco, such as the use of “e-cigarette” batteries and heating elements.</p>
+            <p>Concentrates used in vaping are almost always in was or oil form. Vaporizing herbaceous cannabis is also possible, though less efficient and portable than hand-held vaporizing methods.</p>
+            <p>It’s easy to see why vaping has become such a popular method for consuming marijuana. The method is remarkably discrete and produces none of the telltale “weed smells” that often betray cannabis users. Vape pens and other hand-held devices are portable and convenient. They’re free of many of the harsh marijuana plant compounds that can harm your lung health, like tars. And companies are getting better at crafting high-quality, flavorful vape cartridges with a wide array of cannabinoid profiles.</p>
+
+            <h2>Eating and Drinking Cannabis-Infused “Edibles”</h2>
+
+            <p>Cannabis culture has always taken pride in its epicurean delights. From the old standby of the “special brownie” to advanced gastropub techniques, culinary cannabis has attracted amateur and professional “cannachefs” alike.</p>
+            <p>Eating cannabis, however, does not involve simply ingesting dried marijuana flowers. Instead, the process involves activating and then extracting THC and other cannabinoids from ground marijuana flower using fatty substances like oils and, well, fat.</p>
+            <p>After decarboxylation, which is the process of “activating” marijuana’s cannabinoids with heat, THC and other cannabinoids become soluble in fats. Hence the enduring power of the “pot brownie;” the fats in chocolate and butter excel at sucking up the cannabinoids in the marijuana plant matter.</p>
+            <p>It’s also possible to drink cannabis. Again, drinking marijuana involves the use of oils, tinctures, or other concentrates, which are added to the consumer’s beverage of choice. From lemonade to coffee, drinkable cannabis is an easy and smoke-free way to dose.</p>
+            <p>One important thing to note, however, is that the metabolic pathway of THC is different from that of inhaling. Digestion adds another “stop” on THC’s path to the brain and produces a special form of THC, called THC-COOH, that’s longer-lasting and more potent than THC’s other metabolites.</p>
+            
+            <h2>Dabbing Cannabis Concentrates</h2>
+            <p>Dabbing is the process of rapidly sublimating cannabis concentrates and inhaling the ensuing vapor. Since users are inhaling concentrates with upward of 90 percent THC, dabbing produces highs unmatched by any other method of consuming cannabis.</p>
+            <p>The somewhat crude method of dabbing has evolved over the years thanks to its rapid rise in mainstream cannabis culture. As methods have been refined, the fits of coughing, blasted out lungs, and the infamous “dab sweats” are becoming the purview of only the most diehard dabbers.</p>
+            <p>Keeping a clean rig and learning how to dial in the perfect temperature of the heated element are essential to a pleasurable dabbing experience. With practice, dabbing can produce smooth yet intensely flavorful experiences that lead to incredible and long-lasting highs.</p>
+
+            <h2>The Effects Of Marijuana Use</h2>
+
+            <img src="images/cana 3.webp"  alt="put" style="width:  650px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>The effects of marijuana use on the human body are complex and incompletely understood.</p>
+            <h2>Acute Side Effects</h2>
+            <p>Most of the perceptible side effects of marijuana use are a result of the body’s reaction to the psychoactive THC cannabinoid. THC stimulates or “activates” specific psychological responses generally, but not always, associated with euphoria and relaxation.</p>
+            <h2>Lungs</h2>
+            <p>The results of a major, long-term study into marijuana use and lung health reveal no substantive link between cannabis use and respiratory diseases like lung cancer. Additionally, lifelong marijuana users had no significantly increased risk of breathing problems.</p>
+            <p>Although marijuana smoke contains a number of carcinogens findings from a limited number of well-designed studies do not suggest an increased risk for the development of either lung or upper airway cancer from light or moderate use. However, the evidence is mixed when it comes to the carcinogenic risks of heavy, long-term marijuana users, according to this study.</p>
+            
+            <h2>Plant Science</h2>
+
+            <img src="images/cana 3.webp"  alt="put" style="width:  650px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>Knowing the anatomy of Cannabis sativa is crucial to understanding what distinguishes high-quality marijuana from its lesser varieties. It also helps patients, caregivers and recreational users understand what they’re consuming when they use cannabis, and why.</p>
+            <h2>The Anatomy Of A Cannabis Plant</h2>
+            <p>Cannabis plants can be male, female, or hermaphrodite. The dried marijuana flowers that humans consume, however, come from the female plant. That’s because female plants produce large resin-secreting flowers that are rich in cannabinoids and free of seeds. Hence, female plants are the ones growers prefer, though of course, male marijuana plants are a requirement for pollination.</p>
+            <p>The flowers of female cannabis plants grow in large clusters called cola, with the main cola at the top of the plant. These clusters contain the reproductive parts of the flower, which impart the marijuana plant with vibrant strands of color but do little for potency and taste.</p>
+            <p>Encasing these parts are green tear-shaped leaf-like structures called the bract. Bracts are densely coated with resin-producing glands containing the highest concentration of cannabinoids in the marijuana plant.</p>
+            <p>Finally, the entire marijuana flower structure is coated with resinous crystals called trichomes. Trichomes are translucent, mushroom-like glands that form on the entire flowering structure and even the stems of the marijuana plant. These bulb-shaped glands secrete the rich, aromatic essential oils that give cannabis its smells and flavors. Trichomes also contain cannabinoids.</p>
+
+            <h2>Growing Cannabis</h2>
+
+            <img src="images/cana 5.webp"  alt="put" style="width:  650px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>Commercial cannabis cultivation has grown into a modern, technologically sophisticated operation. Yet amateur and small-scale growers can grow marijuana just as successfully with simpler setups. Recreational marijuana laws that allow for in-home cultivation have contributed to the rise of home marijuana grows.</p>
+            <p>Cannabis can grow well both indoors and out. Cultivation setups can be hydroponic or soil-based. The ideal growing conditions for cannabis depend on the specific requirements of the strain.</p>
+            <h2>Growing Marijuana Indoors</h2>
+            <p>Growing marijuana indoors usually begins with cannabis seeds or a clone which has already begun its initial growth phase. Planting cannabis seeds or rooting a clone is, therefore, the first step. Using correctly calibrated plant nutrients is essential to successful growth. Over-watering and overfeeding cannabis plants is an easy mistake to make.</p>
+            <p>Marijuana plants will give signs when things are going wrong, giving growers a chance to correct course. Indica strains of marijuana are more conducive to indoor growing due to their more efficient use of available space. Sativa cannabis strains require trellising for support and introduce the need for growth training, complicating the setup.</p>
+
+            <h3>Leafly’s 100 best weed strains of all time</h3>
+
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ma 1.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>CANNABIS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>Known for its stickiness and ability to glue you to the couch, GG4 is a modern classic with a unique flavor.</p>
+                
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ma 2.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>CANNABIS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>Have your cake and smoke it too. Why we love it: Have your cake and smoke it too—there’s a reason why this strain spawned many more cakes and was Leafly’s Strain of the year in 2019. </p>
+                
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ma 3.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>CANNABIS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>Northern Lights is one of the most famous strains—an indica that has given rise to countless hybrids. Why we love it: The classic Trainwreck hails from famous lineage and is still popular with its potent, uplifting effects.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ma 4.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>CANNABIS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>With a mysterious origin and a slew of successful crosses, Chemdog has secured a permanent place in the cannabis hall of fame. Why we love it: Forbidden Fruit tastes and smells incredible and is for anyone who loves tropical and citrus flavors and wants a mellow indica high that isn’t overwhelming. </p>
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ma 5.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>CANNABIS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>With a unique high that starts between your eyes and melts outward, Forbidden Fruit balances sweetness and sharp citrus for a tropical burst of flavor. Why we love it: It’s got a complex cookie nose—the cannabis version of mixing together all the sodas at 7-Eleven. MAC is taking over the country, with its offspring close behind.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ma 6.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>CANNABIS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>The cannabis version of mixing together all the sodas at 7-Eleven, Miracle Alien Cookies barely survived a laundry accident.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ma 7.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>CANNABIS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>This potent sativa is known for its strawberry scent and ability to make even the most seasoned smokers cough. Why we love it: This exceptionally delicious sativa will have you inhaling a lungful of fresh strawberry flavor.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ma 8.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>CANNABIS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>For cookie lovers who want something a little mellower and tangier, grab a slice of Pie. Why we love it: Who doesn’t like key lime pie? For Cookie lovers who want something a little mellower and tangier, grab a slice of Pie.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ma 9.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>CANNABIS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>The prodigious strain that gave rise to innumerable iconic West Coast hybrids. Why we love it: It’s a prodigious strain that gave rise to innumerable iconic West Coast hybrids.</p>
+                
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/ma 10.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>CANNABIS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>Ice Cream Cake before bed just may be better than eating ice cream cake in bed. Why we love it: Who doesn’t need better sleep these days? Ice Cream Cake before bed just may be better than eating ice cream cake in bed.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <img src="images/lo 1.webp"  alt="put" style="width:  650px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>Why we love it: It’s as gorgeous, intense, and icy as a double black diamond ski run. Don’t plan to operate heavy machinery or do much of anything while your mind wanders for a bit.</p>
+
+            <img src="images/lo 2.webp"  alt="put" style="width:  650px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>Ice Cream Cake before bed just may be better than eating ice cream cake in bed.<br>
+                Why we love it: Who doesn’t need better sleep these days? Ice Cream Cake before bed just may be better than eating ice cream cake in bed.
+            </p>
+
+            <img src="images/lo 3.webp"  alt="put" style="width:  650px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>Why we love it: Stretching is a great way to connect with your body. If you can’t stretch your body, you can always use Mango to help stretch your imagination to new heights or just vibe out on its tropical scent.</p>
+
+            <img src="images/lo 4.webp"  alt="put" style="width:  650px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>Why we love it: Lemon Tree conjures up warm, sunny beaches and the satisfaction of rolling around in the ocean.</p>
+
+            <img src="images/lo 5.webp"  alt="put" style="width:  370px; float: left; height: 200px;">
+            <img src="images/ma 1.webp"  alt="put" style="width:  368.5px; float: right; height: 200px;">
+
+            <h3>HEALTH BENEFITS OF SMOKING CANNABIS</h3>
+
+            <h3>RELIEF OF CHRONIC PAIN</h3>
+
+            <p>there are hundreds of chemical compounds in cannabis, many of which
+                are cannabinoids. cannabinoids have been liked to providing relief of
+                chronic pain due to their chemical makeup. which is why cannabis'by-product such
+                as medical cannabis is commonly used for chronil pain relief.
+            </p>
+
+            <img src="images/ma 1.webp"  alt="put" style="width:  70px; margin: 1px auto;
+            display: block;">
+
+            <h3>IMPROVES LUNG CAPACITY</h3>
+
+            <p>unlike smoking cigarettes, when smoking cannabis
+                in the form of cannabis your lungs aren't harmed. in fact a study
+                found that cannabis actually helps increase the capacity of the lungs
+                rather than cause any harm to it.
+            </p>
+
+            <img src="images/ma 1.webp"  alt="put" style="width:  70px; margin: 1px auto;
+            display: block;">
+
+            <h3>HELP LOSE WEIGHT</h3>
+
+            <p>if you look arount, you'll notice that the avid cannabis
+                user is usually not overweight.  that is becouse cannabis is 
+                linked to aiding your body in regulating insulin while managing caloric
+                intake efficiently.
+            </p>
+
+            <img src="images/ma 1.webp"  alt="put" style="width:  70px; margin: 1px auto;
+            display: block;">
+
+            <h3>HELPS TREAT DEPRESSION</h3>
+
+            <p>depression is widespread wthout most people
+                even knowing they have it. The endocannabinoid compounds in 
+                cannabis can help in stabilising moods which can ease depression.
+            </p>
+
+            <img src="images/ma 1.webp"  alt="put" style="width:  70px; margin: 1px auto;
+            display: block;">
+
+            <h3>TREATMENT FOR GLAUCOMA</h3>
+
+            <p>Glaucoma leads to additional pressure on the eyeball
+                which is painfull for individuals with the disorder. cannabis can help
+                reduce the pressure applied on the eyball providing some
+                temporary relief to individuals with glaucoma.
+            </p>
+
+            <img src="images/ma 1.webp"  alt="put" style="width:  70px; margin: 1px auto;
+            display: block;">
+
+            <h3>ALLEVIATE ANXIETY</h3>
+
+            <p>While cannabis is commonly known to couse anxiaty,
+                there is a way around that. taken in monitored dosage and in the 
+                proper way, cannabis can help alleviate anxiety and calm useres down.
+            </p>
+
+            <img src="images/logo5.png"  alt="put" style="width:  600px; margin: 1px auto;
+            display: block; height: 400px;">
+
+            <h5> NORTHEN LIGHTS<br> <br>without a doubt, northern lights 
+                is one of the best cannabis strains for pain, and insomnia.<br>
+                <br>ACAPULCO GOLD<br> <br>acapulco gold is a rare sativa marijuana straim. it's 
+                noted for its euphoria-inducing, energizing effect. it's said to reduce fatigue
+                ,stress, pain, and even nausea.<br> <br>BLUE DREAM<br> 
+                blue dream is relaxing and soothing, but it isn't a total sedative.
+                this makes it perffect  for easing pain, cramps, or inflammation for when 
+                you can't afford to fall asleep.<br> <br>PURPLE KUSH<br> <br>purple kush is 
+                great for inducing a state of bliss so that you feel relaxed, happy, and 
+                sleepy. it's often used for reducing pain and muscle spasms.
+                it's sedating effect means it can be used to reduce insomnia.<br> <br>BUBBA KUSH<br> 
+                <br>bubba kush is a relaxing, sleep-inducing strain. it's perfect for helping 
+                you fight insomnia and get some shut-eye. it also offers pain-reducing, stress-relieving 
+                result.
+  
+            </h5> 
+
+
+            <div class="footer">
+                <ul>
+                    <li><a href="index.html">HOME PAGE</a></li>
+                    <a href="about.HTML">ABOUT...</a>
+                    <a href="menu.html">CANNABIS...</a>
+                    <a href="contact.HTML">CONTACT...</a>
+                    <a href="review.html">REVIEW...</a>
+                    <a href="liquor.html">LIQUOR...</a>
+                    <a href="payment methods.html">ONLINE PAYMENT...</a>
+
+                </ul>
+
+                <h6>G5 Smoke is a secure retailer of the finest vannabis online at the web's best prices. Please note that G5 Smoke Shop does not sell tobacco products to anyone under the age of 21 (or the minimum age in your local jurisdiction, whichever is higher). Note also that it is unlawful to even attempt to purchase cigars below the minimum age. If you are not of legal age, please do not use this site.<br>
+
+                <br>Copyright © 2023 G5 smoke shop. Privacy Policy :INSTAGREM- WEEDY.DADDY</h6>
+            </div>
+            
+
+
+
+        </div>
+
+        
+        
+
+       
+        
+
+        <script>
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+
+    </body>
+</html>

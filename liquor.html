@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.bing.com/search?q=cloudflare&cvid=e7c611f3f8bd41d38f244adb4702413b&aqs=edge.0.69i64i450l8.1708413981j0j1&FORM=ANSPA1&PC=ASTS">
+        <title></title>
+
+
+    </head>
+    <body>
+
+        <style>
+
+                .container{
+                    padding: 30px;
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    gap: 90px;
+                }
+
+                .card{
+                    box-shadow: 2px 2px 8px blue;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+                }
+
+                .card-body{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .card-header img{
+                    width: 200px;
+                }
+
+                .card-body h1{
+                    font-size: 10px;
+                    color: orange;
+                    margin-top: 20px;
+                }
+
+                .card-body .rate{
+                    width: 80px;
+                    margin: 5px 0;
+                } 
+
+                .card-body .price{
+                    font-size: 20px;
+                    color: orange;
+                    margin-top: 1px;
+                }
+
+                .card-body button{
+                    border: 0;
+                    padding: 20px 0;
+                    border-radius: 5px;
+                    background: orange;
+                    color: white;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+
+                @media screen and (max-width: 900px) {}
+                    .container{
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+
+            .header{
+                position: fixed;
+                width: 100%;
+                height: 100px;
+                font-weight: bold;
+                text-align: center;
+                background: white;
+                background-size: cover;
+                transition: 0.3s;   
+            }
+
+            .offset{
+                margin-top: 0;
+                padding-top: 100px;
+                text-align: center;
+                transition: 2s;
+                font-size: 15px; 
+            }
+
+            .footer{
+                background: #111;
+            }
+
+
+           
+
+
+
+            /* The side navigation menu */
+            .sidenav {
+                height: 100%; /* 100% Full-height */
+                width: 0; /* 0 width - change this with JavaScript */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Stay on top */
+                top: 0;
+                left: 0;
+                background-color: #111; /* Black*/
+                overflow-x: hidden; /* Disable horizontal scroll */
+                padding-top: 60px; /* Place content 60px from the top */
+                transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            }
+
+            /* The navigation menu links */
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s
+            }
+
+            /* When you mouse over the navigation links, change their color */
+            .sidenav a:hover, .offcanvas a:focus{
+                color: #f1f1f1;
+            }
+
+            /* Position and style the close button (top right corner) */
+            .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px !important;
+                margin-left: 50px;
+            }
+
+            /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+            #main {
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+
+            /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+                @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+
+            h6{
+                font-size: 40px;
+            }
+
+           
+            
+        </style>
+
+        <div class="header">
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+                    <li><a href="index.html">HOME PAGE</a></li>
+                    <a href="about.HTML">ABOUT...</a>
+                    <a href="menu.html">MENU...</a>
+                    <a href="contact.HTML">CONTACT...</a>
+                    <a href="review.html">REVIEW...</a>
+                    <a href="cigar.HTML">CIGAR...</a>
+                    <a href="payment methods.html">ONLINE PAYMENT...</a>
+                </ul>
+                
+                
+              </div>
+              
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()"><img src="images/cart.png" style=" width: 100px; height: 100px;" > 
+            </span>
+              
+              <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+              <div id="main">
+            </div>
+
+
+
+        </div>
+
+        <div class="offset">
+            <h6>welcome to the G5 liquor hub</h6>
+
+            <img src="images/l logo 2.jpg"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+
+
+            <p>Liquor is an alcoholic drink produced by distillation of grains, fruits, vegetables, or sugar, that have already gone through alcoholic fermentation. Other terms for liquor include: spirit, distilled beverage, spirituous liquor or hard liquor. The distillation process concentrates the liquid to increase its alcohol by volume. As liquors contain significantly more alcohol than other alcoholic drinks, they are considered 'harder'; in North America, the term hard liquor is sometimes used to distinguish distilled alcoholic drinks from non-distilled ones, whereas the term spirits is more common in the UK. Some examples of liquors include vodka, rum, gin, and tequila. Liquors are often aged in barrels, such as for the production of brandy and whiskey, or are infused with flavorings to form a flavored liquor such as absinthe.</p>
+    
+            <h3>5 Health Benefits Of Drinking Alcohol</h3>
+
+            <img src="images/alcohol-moderation-has-number-health-benefits.webp"  alt="put" style="width:  550px; margin: 1px auto;
+            display: block; height: 250px;">
+
+            <p>Getting wasted every weekend might not be the best thing for your physical or mental well-being, but moderate alcohol consumption may have some substantial health benefits. It should be noted that alcohol consumption and its benefits vary based on an individual's body makeup and type.</p>
+            <p>According to the Dietary Guidelines for Americans, "moderate alcohol consumption is defined as having up to one drink per day for women and up to two drinks per day for men. This definition is referring to the amount consumed on any single day and is not intended as an average over several days."</p>
+            <p>Now, we've all heard the reasons why alcohol is bad for you, but what about the benefits? Here is our list of seven ways that drinking alcohol in moderation (when you're of the legal drinking age of course) might benefit your health.</p>
+
+            <h2>1. It Can Lower Your Risk Of Cardiovascular Disease</h2>
+
+            <p>The School of Public Health at Harvard University found that "moderate amounts of alcohol raises levels of high-density lipoprotein, HDL, or 'good' cholesterol and higher HDL levels are associated with greater protection against heart disease. Moderate alcohol consumption has also been linked with beneficial changes ranging from better sensitivity to insulin to improvements in factors that influence blood clotting....Such changes would tend to prevent the formation of small blood clots that can block arteries in the heart, neck, and brain, the ultimate cause of many heart attacks and the most common kind of stroke." This finding is applicable to both men and women who have not been previously diagnosed with any type of cardiovascular disease.</p>
+
+            <h2>2. It Can Lengthen Your Life</h2>
+
+            <p>Drinking occasionally could add a few years to your life. A study by the Catholic University of Campobasso reported that drinking less than four or two drinks per day for men and women respectively could reduce the risk of death by 18 percent, as reported by Reuters. "Little amounts, preferably during meals, this appears to be the right way (to drink alcohol)," said Dr. Giovanni de Gaetano of Catholic University, another author on the study. "This is another feature of the Mediterranean diet, where alcohol, wine above all, is the ideal partner of a dinner or lunch, but that's all: the rest of the day must be absolutely alcohol-free."</p>
+
+            <h2>3. It Can Improve Your Libido</h2>
+
+            <p>Contrary to prior beliefs, newer research has found that moderate drinking might actually protect against erectile dysfunction in the same way that drinking red wine might benefit heart disease. In a 2009 study published in the, Journal of Sexual Medicine, researchers found that the chances of erectile dysfunction were reduced by 25 to 30 percent among alcohol drinkers. The lead researcher, Kew-Kim Chew, an epidemiologist at the University of West Australia, conducted the study with 1,770 Australian men. In his study, Chew cautiously noted that he and his team in no way are advising men to hit the bottle, and that further research is needed to accurately connect impotence and alcohol consumption.
+
+            </p>
+
+            <h2>4. It Helps Prevent Against the Common Cold</h2>
+
+            <p>The Department of Psychology at Carnegie Mellon University found that while susceptibility to the common cold was increased by smoking, moderate alcohol consumption led to a decrease in common cold cases for nonsmokers. This study was conducted in 1993 with 391 adults. In 2002, according to the New York Times, Spanish researchers found that by drinking eight to 14 glasses of wine per week, particularly red wine, one could see a 60-percent reduction in the risk of developing a cold. The scientists suspected that this had something to do with the antioxidant properties of wine.</p>
+
+            <h2>5. It Can Decrease Chances Of Developing Dementia</h2>
+
+            <p>In a study that included more than 365,000 participants since 1977, as reported in the journal Neuropsychiatric Disease and Treatment, moderate drinkers were 23 percent less likely to develop cognitive impairment or Alzheimer's disease and other forms of dementia. "Small amounts of alcohol might, in effect, make brain cells more fit. Alcohol in moderate amounts stresses cells and thus toughens them up to cope with major stresses down the road that could cause dementia," said Edward J. Neafsey, Ph.D., co-author of the study, as reported by Science Daily. "We don't recommend that nondrinkers start drinking," Neafsey said. "But moderate drinking — if it is truly moderate — can be beneficial."</p>
+
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/intro-1643905028 1.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1></h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>Ordering an old fashioned is a bold statement –– in a way, you're telling the bartender you're sophisticated yet want a cocktail that packs a punch. The whiskey, bitters, sugar, traces of orange, and maraschino cherries dance together in a glass. The outcome is sweet yet the bourbon keeps the cocktail honest. The old fashioned is a classic for a reason –– yet the one question everyone wants to know is ... what bourbon should you choose when ordering Don Draper's favorite drink?
+
+                            </p>
+                            
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/buffalo-trace-kentucky-straight-bourbon-whiskey-1643905028 2.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>H. UPMANN NICARAGUA AJ FERNANDEZ HERITAGE CIGARS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>When it comes to certain types of alcohol (we're looking at you, vino), the older the batch, the better it tends to be –– at least, the more desirable as it's held to a higher standard. Buffalo Trace Bourbon is made by Buffalo Trace Distillery, which has roots dating back more than 200 years. And this Buffalo Trace Bourbon is the company's signature Buffalo Trace Kentucky Straight Bourbon Whiskey.
+
+                           </p>
+                            
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/eagle-rare-kentucky-straight-bourbon-whiskey-1643905028 4.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1></h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>another winner from Buffalo Trace, is worth every penny –– if you're willing to shell out the heavy price tag, that is. This bourbon is "aged for no less than ten years," and as many wine and whiskey enthusiasts can attest to, the longer a liquid marinates, the more unique the flavor, not to mention *chef's kiss* refreshing.
+
+                            
+                            
+                            
+                            
+                           
+                            
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/bulleit-bourbon-whiskey-1643905028 3.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1></h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>is the liquid gift that keeps on giving. After all, Bulleit Bourbon is, according to bulleit.com, "inspired by the whiskey pioneered by Augustus Bulleit over 150 years ago." Due to "its unique blend of rye, corn, and barley malt, along with special strains of yeast and pure Kentucky limestone-filtered water," this Bourbon was made for an old fashioned –– yet it's the perfect standalone if you want to enjoy its natural flavors by itself, and many avid whiskey drinkers do.</p>
+                            
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/elijah-craig-small-batch-1643905028 5.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>BUY PLASENCIA COSECHA 149</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>Coming back to a more affordable bourbon, will make your next old fashioned sing. Described as Elijah Craig's signature Small Batch (via elijahcraig.com), its "distinctive warm spice & subtle smoke flavor" can be credited to
+
+                            "Level 3 charred oak barrels." When it comes to whiskey, it's seemingly 
+                            Concocted by Elijah Craig, the aroma is "Delightfully complex with notes of vanilla bean, sweet fruit, and fresh mint." The taste is described as "Smooth and warm; pleasantly woody with accents of spice, smoke, and nutmeg." The finish is characterized as "Long, sweet, and slightly toasty." Need we say more?
+
+                            
+
+
+                            
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/four-roses-single-barrel-1643905028 6.webp" alt="door image">
+
+                    </div>
+                    <div class="card-body">
+                        <h1>SHOP FOUNDATION OLMEC CIGARS</h1>
+                        <img src="images/rate.png" class="rate icon">
+                        <p>With a 100-proof makeup, isn't messing around, and it's aged a minimum of seven to nine years for good measure. It's good straight up, on the rocks, or, of course, in an old fashioned. The Four Roses website describe this bourbon as "complex, full-bodied and surprisingly smooth with a delicate, long finish that's unbelievably mellow." Continuing this bourbon whiskey adventure, Four Roses says the Single Barrel's nose consists of "Dried spice, pear, cocoa, vanilla and maple syrup." The palate is characterized as "Hints of ripe plum and cherries, robust, full body, mellow." The finish is "Smooth and delicately long." Smooth and delicately long is the perfect way to describe the ideal bourbon.
+
+                            Four Roses Single Barrel is surprisingly affordable for a single barrel and it's only a matter of time before it becomes your regular given this factor, not to mention the smoothness, unique taste, and overall quality it brings to the glass.
+                    </p>
+                </div>  
+            </div>
+        </div>
+
+        <img src="images/l 2.webp"  alt="put" style="width:  600px; margin: 1px auto;
+        display: block; height: 300px;">
+
+        <p>Marker's mark is an ideal old fashioned ingredient. The bourbon is delicious and it's also not too steep in the price department. Pound for pound, it's a world-champ in any class.
+
+            "Never bitter or sharp, Maker's Mark® is made with soft red winter wheat, instead of the usual rye, for a one-of-a-kind, full-flavored bourbon that's easy to drink," the Maker's Mark website entails. Every barrel is rotated by hand and it's aged by taste rather than
+            time. As Maker's Mark fans have come to know and love, each bottle is hand-dipped in red wax, giving this bourbon an elegant feel –– even before uncorking it.
+        </p>
+
+        <img src="images/l 3.webp"  alt="put" style="width:  600px; margin: 1px auto;
+        display: block; height: 300px;">
+
+        <p> woodford reserve kentuky straight bourbon whisky is a popular option for a reason: it's a great value at its price point. Like all great bourbons, Woodford Reserve Straight Bourbon Whiskey has a storied past and the distillery itself is now a national historic landmark. It's comprised of more than 200 flavor notes, "from bold grain and wood, to
+            sweet aromatics, spice, and fruit & floral notes.
+
+        </p>
+
+        <img src="images/l 4.webp"  alt="put" style="width:  600px; margin: 1px auto;
+        display: block; height: 300px;">
+
+        <p>If you fancy Knob Creek Bourbon, then knob creek 12  is a no-brainer for your old fashioned. Though its price tag is quite significantly raised we feel it's still within reach. Similar to Knob Creek Bourbon, Knob Creek 12 is 100 proof, but it has been aged for 12 years. According to the Knob Creek website, this all-star choice is described as "full proof for full flavor. An honest Pre-Prohibition style bourbon
+
+        </p>
+
+        <h4>10 Most Popular
+        NORTH AMERICAN LIQUEURS</h4>
+
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/north 2.jpg" alt="door image">
+
+                </div>
+                <div class="card-body">
+                    <h1>CANNABIS</h1>
+                    <img src="images/rate.png" class="rate icon">
+                    <p>Angostura is a concentrated bitters made with herbs and spices. It was developed in 1824, when a German doctor Johann Gottlieb Benjamin Siegert, who was a surgeon general for Simón Bolívar, used a secret blend of botanicals, including angelica, cinchona, ginger, cinnamon, cardamom, and orange peel, to create an antifebrile tonic.
+
+                    The drink was an instant success and was later mainly used as a flavor enhancement because of the fairly high alcohol content of 44.7%. Due to political turmoil, Siegert relocated his company from Venezuelan city of Angostura (Ciudad Bolivar) to Trinidad and Tobago, where it still operates. </p>     
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/north 3.jpg" alt="door image">
+
+                </div>
+                <div class="card-body">
+                    <h1>CANNABIS</h1>
+                    <img src="images/rate.png" class="rate icon">
+                    <p>Blue Curaçao is a type of Curaçao liqueur—naturally colorless liqueur that is flavored with Laraha oranges. This variety is artificially colored to attain its distinctive, vibrant blue color. This clear drink has a typical orange flavor, though the final taste profile may vary depending on the producer.
+
+                    There are several manufactures on the market, but they are not necessarily located on Curaçao, and some even do not use Laraha oranges. Blue Curaçao is mostly used as a flavoring and coloring agent in cocktails.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/north 4.jpg" alt="door image">
+
+                </div>
+                <div class="card-body">
+                    <h1>CANNABIS</h1>
+                    <img src="images/rate.png" class="rate icon">
+                    <p>This pomegranate-flavored liqueur was first manufactured in 2006. Although it does not pride in rich and long history, the liqueur soon gained recognition for its versatility and a complex taste profile. It is produced from natural pomegranate juice, premium vodka, and a small amount of imported tequila. Pama is praised for its berry aroma and a unique combination of sweet and tart flavors.
+
+                    Although it can be enjoyed on its own, preferably on the rocks with a lemon twist, it also pairs exceptionally well with bubbly drinks such as ginger ale, tonic water, sparkling wines, and Champagne.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/north 5.jpg" alt="door image">
+
+                </div>
+                <div class="card-body">
+                    <h1>CANNABIS</h1>
+                    <img src="images/rate.png" class="rate icon">
+                    <p>Curaçao is a popular liqueur flavored with Laraha (Curaçao orange), which is cultivated on the namesake island in the southern Caribbean Sea. The story of its invention started in the 16th century when the Spanish colonizers brought Valencian oranges to Curaçao.
+
+                    The fruit did not adapt well to the local climate, and it was almost inedible. It took decades for the locals to realize that the dried peel is rich with essential oils and incredibly aromatic. The peel was then used in the production of liqueurs, and though it is not certain, many believe that the commercial production was started in 1896 by the Senior family. </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/north 6.jpg" alt="door image">
+
+                </div>
+                <div class="card-body">
+                    <h1>CANNABIS</h1>
+                    <img src="images/rate.png" class="rate icon">
+                    <p>Coconut rum is a somewhat misleading term that mostly refers to coconut-flavored liqueurs typically based on rum. These liqueurs can have natural or artificial coconut flavors and aromas, while the base is usually made with white or gold rum.
+
+                    They typically do not have high alcohol content. Coconut-flavored rums are internationally produced, but their spiritual home remains on the Caribbean islands. Their light and aromatic character is best showcased in tropical cocktails.</p>
+                
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/north 7.jpg" alt="door image">
+
+                </div>
+                <div class="card-body">
+                    <h1>CANNABIS</h1>
+                    <img src="images/rate.png" class="rate icon">
+                    <p>RumChata is a rum-based cream liqueur that is produced in Wisconsin. The base is made with light Caribbean rum that is distilled five times. It is then mixed with locally-sourced fresh dairy cream, sugar, and a spice blend that includes vanilla and cinnamon.
+
+                    The drink was modeled on horchata—a creamy drink popular in Spain and Latin America that usually combines rice, milk, sugar, and spices. The name is also a reference to the drink—it is a portmanteau of rum and horchata. RumChata is a light, creamy liqueur that is not overly sweet or cloying. </p>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/north 8.jpg" alt="door image">
+
+                </div>
+                <div class="card-body">
+                    <h1>CANNABIS</h1>
+                    <img src="images/rate.png" class="rate icon">
+                    <p>Malibu is a rum-based, coconut-flavored liqueur that is produced in Barbados. It is made with light-bodied white rum that is distilled from molasses. The rum is then combined with sugar and coconut extract to achieve its light character and subtle coconut flavors and aromas.
+
+                    It is bottled at 21% ABV. Malibu was invented to simplify the preparation of piña coladas. When it became popular, the entire production was moved to Barbados, and the overall quality of the liqueur was improved. Malibu is nowadays the most popular coconut-flavored rum in the world. </p>
+                
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/north 9.jpg" alt="door image">
+
+                </div>
+                <div class="card-body">
+                    <h1>CANNABIS</h1>
+                    <img src="images/rate.png" class="rate icon">
+                    <p>In its original form, this Southern classic used whiskey as its base, along with a secret combination of spices. Sometime in the 20th century, the original recipe was changed, and whiskey was merely used as a flavoring, while the drink was based on a neutral grain spirit.
+
+                    First created by Martin W. Heron in New Orleans, Southern Comfort is appreciated for its smooth flavor, with hints of fruits and spices. It can be enjoyed neat or on the rocks, but it also works well as a cocktail ingredient. In 2016, the brand was bought by Sazerac, a company that is trying to bring Southern Comfort back to its original form.</p>
+            
+                </div>
+            </div>
+        </div>
+
+        <img src="images/north 10.jpg"  alt="put" style="width:  600px; margin: 1px auto;
+        display: block; height: 300px;">
+
+        <p>This award-winning Mexican coffee liqueur was first introduced in 1936. It was created in Veracruz and was named Kahlúa, which in ancient Veracruz Nahuatl language means the house of the Acolhua people. Rum-based Kahlúa is a full-bodied liqueur with enticing flavor and aromas of roasted coffee beans and hints of vanilla and caramel.
+
+        It is a mainstay in bars across the world, and though it works great on its own, preferably served on the rocks, it is mostly used in cocktails, out of which the most popular are White Russian, Espresso Martini, and a layered B52 shot. Because of its sweetness, it is also a great complement to desserts.</p>
+
+        <div class="footer">
+            <ul>
+                <li><a href="index.html">HOME PAGE</a></li>
+                <a href="about.HTML">ABOUT...</a>
+                <a href="contact.HTML">CONTACT...</a>
+                <a href="review.html">REVIEW...</a>
+                <a href="menu.html">CANNABIS...</a>
+                <a href="liquor.html">LIQUOR...</a>
+                <a href="cigar.HTML">CIGAR...</a>
+                <a href="payment methods.html">ONLINE PAYMENT...</a>
+
+
+            </ul>
+            <a href="https://www.instagram.com/direct/inbox/">instagram...</a>
+
+            <h1>G5 HUB</h1>
+                
+            <br>Copyright © 2023 G5 hub. Privacy Policy Policy: INSTAGREM- WEEDY.DADDY</h6>
+        </div>
+
+
+
+        <script>
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+
+    </body>
+</html>

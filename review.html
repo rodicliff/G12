@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.bing.com/search?q=cloudflare&cvid=e7c611f3f8bd41d38f244adb4702413b&aqs=edge.0.69i64i450l8.1708413981j0j1&FORM=ANSPA1&PC=ASTS">
+        <title></title>
+
+
+    </head>
+    <body>
+
+        <style>
+
+            .header{
+                position: fixed;
+                width: 100%;
+                height: 100px;
+                font-weight: bold;
+                text-align: center;
+                background: white;
+                background-size: cover;
+                transition: 0.3s;   
+            }
+
+            .offset{
+                margin-top: 0;
+                padding-top: 100px;
+                text-align: center;
+                transition: 2s;
+                font-size: 15px;
+            }
+
+
+           
+
+
+
+            /* The side navigation menu */
+            .sidenav {
+                height: 100%; /* 100% Full-height */
+                width: 0; /* 0 width - change this with JavaScript */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Stay on top */
+                top: 0;
+                left: 0;
+                background-color: #111; /* Black*/
+                overflow-x: hidden; /* Disable horizontal scroll */
+                padding-top: 60px; /* Place content 60px from the top */
+                transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            }
+
+            /* The navigation menu links */
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s
+            }
+
+            /* When you mouse over the navigation links, change their color */
+            .sidenav a:hover, .offcanvas a:focus{
+                color: #f1f1f1;
+            }
+
+            /* Position and style the close button (top right corner) */
+            .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px !important;
+                margin-left: 50px;
+            }
+
+            /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+            #main {
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+
+            /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+                @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: "montserat", sans-serif;
+                
+            }
+            .review{
+                padding: 40px 0;
+                background: #f1f1f1;
+                color: #434343;
+                text-align: center;
+            }
+            .inner{
+                max-width: 1100px;
+                margin: auto;
+                overflow: hidden;
+                padding: 0 20px;
+            }
+            .border{
+                width: 160px;
+                height: 5px;
+                background: #6ab04c;
+                margin: 26px auto;
+            }
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .col{
+                flex: 33.33%;
+                max-width: 33.33%;
+                box-sizing: border-box;
+                padding: 15px;
+                box-shadow: 5px 5px 20px blue;
+            }
+            .review{
+                background: #fff;
+                padding: 30px;
+            }
+            .review img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            .name{
+                font-size: 20px;
+                text-transform: uppercase;
+                margin: 20px 0;
+            }
+
+            @media  screen and (max-width:600px) {
+                .col{
+                    flex: 100px;
+                    max-width: 80%;
+                }
+                
+            }
+
+            @media screen and (max-width:560px) {
+                .col{
+                    flex: 100px;
+                    max-width: 100%;
+                }
+                
+            }
+
+            
+            .footer{
+                background: #111;
+                font-size: 20px;
+                font-style: oblique;
+            }
+
+           
+            
+
+            
+            
+
+
+            
+        </style>
+
+        <div class="header">
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+                    
+                    <li><a href="index.html">HOME PAGE</a></li>
+                    <a href="about.HTML">ABOUT...</a>
+                    <a href="contact.HTML">CONTACT...</a>
+                    <a href="menu.html">CANNABIS...</a>
+                    <a href="liquor.html">LIQUOR...</a>
+                    <a href="cigar.HTML">CIGAR...</a>
+                    <a href="payment methods.html">ONLINE PAYMENT...</a>
+                                        
+                </ul>
+                
+                
+              </div>
+              
+              <!-- Use any element to open the sidenav -->
+              <span onclick="openNav()"><img src="images/cart.png" style=" width: 100px; height: 100px;" > 
+            </span>
+              
+              <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+              <div id="main">
+            </div>
+
+
+
+        </div>
+
+        <div class="offset">
+            <div class="review">
+                <div class="inner">
+                    <h1>review</h1>
+                    <div class="border"></div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="review">
+                                <img src="images/man 1.png" alt="">
+                                <div class="name">michael</div>
+                                
+                                <p>wow... thank you guys so much i just recieved my weed.</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="review">
+                                <img src="images/man 2.png" alt="">
+                                <div class="name">derick austen</div>
+                                
+                                
+                                <p>thank you guys so much, you guys are amazing.</p>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="review">
+                                <img src="images/man 3.png" alt="">
+                                <div class="name">john brown</div>
+                                
+                                
+                                <p>i just recieved my package thank you guys.</p>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="review">
+                                    <img src="images/man 4.png" alt="">
+                                    <div class="name">usmand ali</div>
+                                    
+                                    
+                                    <p>i recieved my package a little bit late but it was amazing </p>
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="col">
+                                <div class="review">
+                                    <img src="images/man 23.png" alt="">
+                                    <div class="name">mohamed ali</div>
+                                    
+                                    
+                                    <p>demn dawg, SATIVA is the weed i've ever had demn shit is so good.</p>
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="col">
+                                <div class="review">
+                                    <img src="images/man 6.png" alt="">
+                                    <div class="name">brighness</div>
+                                    
+                                    <p>i just recieved my package thank you guys.</p>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="review">
+                                        <img src="images/man 17.png" alt="">
+                                        <div class="name">trafido rash</div>
+                                        
+                                        
+                                        <p> i recieved my stuf on time i'm gratfull</p>
+                                    </div>
+                                </div>
+        
+                                <div class="col">
+                                    <div class="review">
+                                        <img src="images/man 8.png" alt="">
+                                        <div class="name">cardo martens</div>
+                                        
+                                        
+                                        <p>i'll do more business with you guys in some days to come.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="col">
+                                    <div class="review">
+                                        <img src="images/man 9.png" alt="">
+                                        <div class="name">mabel austen</div>
+                                        
+                                        
+                                        <p>i just recieved the package you promised me thank you guys.</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="review">
+                                            <img src="images/man 10.png" alt="">
+                                            <div class="name">john cane</div>
+                                            
+                                            
+                                            <p> you guys are the best i just recieved my cannabis.</p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col">
+                                        <div class="review">
+                                            <img src="images/man 11.png" alt="">
+                                            <div class="name">diamond </div>
+                                            
+                                            
+                                            <p>thank you guys i'll still oder some more from you guys</p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col">
+                                        <div class="review">
+                                            <img src="images/man 12.png" alt="">
+                                            <div class="name">blue boy</div>
+                                            
+                                            
+                                            <p>wow... just wow... thank you guys so much i just recieved my 25g of cannabis.</p>
+                                            </p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="review">
+                                                <img src="images/man 13.png" alt="">
+                                                <div class="name">lesly james</div>
+                                                
+                                                
+                                                <p> all my boy are super suprise dawg w're all satified.</p>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col">
+                                            <div class="review">
+                                                <img src="images/man 14.png" alt="">
+                                                <div class="name">daria daniel</div>
+                                                
+                                                
+                                                <p> shit is cool dawg, i just recieved my stuf bro i'll buy more from you.</p>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col">
+                                            <div class="review">
+                                                <img src="images/man 15.png" alt="">
+                                                <div class="name">jeriad joe</div>
+                                                
+                                                
+                                                <p>tasted and trusted. i just recieved my package i'll oder for 50g next week.
+                                                </p>
+                                            </div>
+                                        </div>
+            
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="review">
+                                                    <img src="images/man 16.png" alt="">
+                                                    <div class="name">kelvin pull</div>
+                                                    
+                                                    
+                                                    <p> you guys are so good i never belived cannabis could be delivered in india </p>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col">
+                                                <div class="review">
+                                                    <img src="images/man 18.png" alt="">
+                                                    <div class="name">coco martines</div>
+                                                    
+                                                    
+                                                    <p>you are tasted and trusted i just recieved my cannabs.</p>
+                                                    </p>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col">
+                                                <div class="review">
+                                                    <img src="images/man 19.png" alt="">
+                                                    <div class="name">ruger black</div>
+                                                    
+                                                    
+                                                    <p> guy a wanna buy 200g of SATIVA hope it'll be availible by the end of this week..?
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="review">
+                                                        <img src="images/man 20.png" alt="">
+                                                        <div class="name">weddy daddy</div>
+                                                        
+                                                        
+                                                        <p> i just recieved my weed dude thank you.</p>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col">
+                                                    <div class="review">
+                                                        <img src="images/man 21.png" alt="">
+                                                        <div class="name">cannabis hub</div>
+                                                        
+                                                        
+                                                        <p>the HUB i super proud of you guys. the drongs lord around me in new york all want to do businnes with you guys.</p>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="col">
+                                                    <div class="review">
+                                                        <img src="images/man 22.png" alt="">
+                                                        <div class="name">weed store</div>
+                                                        
+                                                        
+                                                        <p>the store is all good now all thanks to you bro 
+                                                            thanks for delivering my packages 
+                                                        </p>
+                                                    </div>
+                                                </div>
+    
+                        
+                        
+                                                <div class="footer">
+                                                    <ul>
+                                                        <li><a href="index.html">HOME PAGE</a></li>
+                                                        <a href="about.HTML">ABOUT...</a>
+                                                        <a href="contact.HTML">CONTACT...</a>
+                                                        <a href="menu.html">CANNABIS...</a>
+                                                        <a href="liquor.html">LIQUOR...</a>
+                                                        <a href="cigar.HTML">CIGAR...</a>
+                                                        <a href="payment methods.html">ONLINE PAYMENT...</a>
+                                        
+                                                    </ul>
+                                                    <a href="https://www.instagram.com/direct/inbox/">instagram...</a>
+                                                    <h6>G5 HUB is a secure retailer of the finest cigars cannabis and liquor online at the web's best prices. Please note that hub does not sell tobacco products to anyone under the age of 81 (or the minimum age in your local jurisdiction, whichever is higher). Note also that it is unlawful to even attempt to purchase any of our product below the minimum age. If you are not of legal age, please do not use this site.<br>
+                                        
+                                                    <br>Copyright © 2023 G5 hub. Privacy Policy: INSTAGREM- WEEDY.DADDY</h6>
+                                                </div>
+                                             
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+
+
+       
+        
+
+        <script>
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+
+    </body>
+</html>
